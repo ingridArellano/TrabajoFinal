@@ -1,0 +1,24 @@
+.padre {
+    background-color: lightblue ;
+    margin: 0 auto ;
+    text-align: justify;
+    width: 400px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+.hijo {
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.inputt {
+    width: 300px;
+}
+.boton {
+    display: block;
+    margin: 0 auto;
+}
