@@ -2,7 +2,8 @@
     background-color: lightblue ;
     margin: 0 auto ;
     text-align: justify;
-    width: 400px;
+    width: 500px;
+    padding: 0 5px 5px 5px;
 }
 
 img {
@@ -15,9 +16,15 @@ img {
     padding: 10px;
 }
 
-.inputt {
-    width: 300px;
+label {
+    margin: .5em 0 0 0;
 }
+
+.inputt {
+    width: 100%;
+    border-radius: 5px;
+}
+
 .boton {
     display: block;
     margin: 0 auto;
