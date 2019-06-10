@@ -23,23 +23,23 @@
 
 <?php
 #PASO 2: EJECUTAR UNA SENTENCIA SQL el for each hace el fecth automaticamente (jalar), este fecth es para hallar un usuario en la base de datos
-foreach ($pdo->query("SELECT * FROM mascota") as $fila)
+foreach ($pdo->query("SELECT * FROM mascotas") as $fila)
 {
 ?>
     <tr>
         <td>
-        <?php echo $fila["nombre_mascota"] ?>
+        <?php echo $fila["nombre_masc"] ?>
         </td>
         <td>
-        <?php echo $fila["sexo_mascota"] ?>
+        <?php echo $fila["sexo_masc"] ?>
         <td>
         <?php echo $fila["edad_masc"] ?>
         </td>
         <td>
-         <a href="perfil.php?id=<?php echo $fila["id_mascota"]?>">Conoceme</a>
+         <a href="adoptar.php?id=<?php echo $fila["id_masc"]?>">Conoceme</a>
         </td>
         <td>
-         <a href="perfil.php?id=<?php echo $fila["id_mascota"]?>">BORRAR</a>
+         <a href="adoptar.php?id=<?php echo $fila["id_masc"]?>">BORRAR</a>
         </td>
 
     </tr>

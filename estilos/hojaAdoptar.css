@@ -19,7 +19,7 @@ body{
     height:200px;
     padding: 15px 10px;
 }
-.a, .b, .c, .d, .e, .f, .g, .h, .i{
+.a{
     flex-grow:2;
     flex-shrink:1;
 }

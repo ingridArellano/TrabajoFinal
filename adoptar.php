@@ -1,8 +1,5 @@
 <?php
-$id=$_GET["id_masc"];
 $pdo=new PDO ("mysql:host=localhost;dbname=AdoptMe;charset=utf8","root","");
-$resultado=$pdo->query("SELECT * FROM mascota WHERE id_mascota='$id' ");
-$fila=$resultado->fetch();
 ?>
 
 <!DOCTYPE html>
@@ -77,84 +74,29 @@ $fila=$resultado->fetch();
         </div>
 
               
-        <input type="text" name="tamaño" placeholder="Tamaño" value="<?php echo $fila["tamaño"]?>"> 
-        
-        
-        <input type="text" name="em" placeholder="Edad aprox" value="<?php echo $fila["edad_masc"]?>"> 
-        
-        
-        <input type="text" name="na" placeholder="Nivel de Actividad" value="<?php echo $fila["nivel_actividad"]?>"> 
-        
-        <input type="text" name="er" placeholder="Espacio requerido" value="<?php echo $fila["espacio_requerido"]?>"> 
-        
-        
-        <input type="text" name="ts" placeholder="Puede estar solo" value="<?php echo $fila["tiempo_solo"]?>"> 
-        </div>
-
-
+      
         <input type="submit" value="Buscar">
 
 
     </form>
 
 </div>
-<?php 
-foreach ($pdo->query("SELECT * FROM mascota") as $fila) {
-?>
 
 <div class="conte_padre">
+    <?php 
+    foreach ($pdo->query("SELECT * FROM mascotas") as $fila) {
+    ?>
 
-    <div class="hijo a">
-    <img class="imagen-cuadro" src="http://cdn.lavozdesanjusto.com.ar/Imagenes/1200Image1534794eb6f149ba9ed94d6fa86fd45b.jpg" alt="">
-    <a class="prueba" href="perfil.php">Conóceme</a>
-   </div> 
+        <div class="hijo a">
+        <img class="imagen-cuadro" src="http://cdn.lavozdesanjusto.com.ar/Imagenes/1200Image1534794eb6f149ba9ed94d6fa86fd45b.jpg" alt="">
+        <a class="prueba" href="login.php">Conóceme</a>
+        </div> 
 
-    <div class="hijo b">
-    <img class="imagen-cuadro" src="http://cdn.lavozdesanjusto.com.ar/Imagenes/1200Image1534794eb6f149ba9ed94d6fa86fd45b.jpg" alt="">
-    <a class="prueba" href="perfil.php">Conóceme</a>
-    </div>
-
-    <div class="hijo c">
-    <img class="imagen-cuadro" src="http://cdn.lavozdesanjusto.com.ar/Imagenes/1200Image1534794eb6f149ba9ed94d6fa86fd45b.jpg" alt="">
-    <a class="prueba" href="perfil.php">Conóceme</a>
-    </div>
-
-    <div class="hijo d">
-    <img class="imagen-cuadro" src="http://cdn.lavozdesanjusto.com.ar/Imagenes/1200Image1534794eb6f149ba9ed94d6fa86fd45b.jpg" alt="">
-    <a class="prueba" href="perfil.php">Conóceme</a>
-    </div>
-
-    <div class="hijo e">
-    <img class="imagen-cuadro" src="http://cdn.lavozdesanjusto.com.ar/Imagenes/1200Image1534794eb6f149ba9ed94d6fa86fd45b.jpg" alt="">
-    <a class="prueba" href="perfil.php">Conóceme</a>
-    </div>
-
-    <div class="hijo f">
-    <img class="imagen-cuadro" src="http://cdn.lavozdesanjusto.com.ar/Imagenes/1200Image1534794eb6f149ba9ed94d6fa86fd45b.jpg" alt="">
-    <a class="prueba" href="perfil.php">Conóceme</a>
-    </div>
-
-    <div class="hijo g">
-    <img class="imagen-cuadro" src="http://cdn.lavozdesanjusto.com.ar/Imagenes/1200Image1534794eb6f149ba9ed94d6fa86fd45b.jpg" alt="">
-    <a class="prueba" href="perfil.php">Conóceme</a>
-    </div>
-
-    <div class="hijo h">
-    <img class="imagen-cuadro" src="http://cdn.lavozdesanjusto.com.ar/Imagenes/1200Image1534794eb6f149ba9ed94d6fa86fd45b.jpg" alt="">
-    <a class="prueba" href="perfil.php">Conóceme</a>
-    </div>
-
-    <div class="hijo i">
-    <img class="imagen-cuadro" src="http://cdn.lavozdesanjusto.com.ar/Imagenes/1200Image1534794eb6f149ba9ed94d6fa86fd45b.jpg" alt="">
-    <a class="prueba" href="perfil.php">Conóceme</a>
-    
-    </div>
-    
-
-</div>
-<?php
-}
-?>
+        
+    <?php
+    }
+    ?>
+ </div>
 <?php include 'pie.php'?>
 
     
