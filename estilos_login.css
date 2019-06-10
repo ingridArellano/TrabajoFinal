@@ -1,0 +1,65 @@
+
+*{
+    margin:0;
+    padding:0;
+    font-family: arial;
+    box-sizing: border-box;
+}
+body{
+    background-color:green;
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    
+}
+.login_conte h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color:white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.login_conte{
+    width: 400px;
+    padding: 40px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background: darkblue;
+    text-align:center;
+}
+.login_conte input[type = "text"], .login_conte input[type = "password"] {
+    background: none;
+    display:block;
+    margin: 20px auto;
+    text-align:center;
+    border:2px solid white;
+    padding:14px 10px;
+    width:200px;
+    outline:none;
+    color:white;
+    border-radius: 24px;
+    transition:0.25s;
+}
+.login_conte input[type = "text"]:focus, .login_conte input[type = "password"]:focus {
+    width:275px;
+    border-color: aqua;
+}
+.login_conte input[type = "submit"]{
+    background: none;
+    display:block;
+    margin: 20px auto;
+    text-align:center;
+    border:2px solid aquamarine;
+    padding:14px 50px;
+    outline:none;
+    color:white;
+    border-radius: 24px;
+    transition:0.25s;
+    cursor:pointer;
+}
+.login_conte input[type = "submit"]:hover{
+    background: green;
+}
