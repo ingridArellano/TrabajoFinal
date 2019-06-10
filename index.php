@@ -12,7 +12,7 @@ session_start(); #Esta funcion debe ser llamada antes de un output
     <title>Document</title>
 </head>
 <body>
-<?php include 'cabecera.php'?>
+
 <h1>Página principal</h1>
 
 <?php if(isset($_SESSION["usuario"])){ ?>
@@ -23,6 +23,6 @@ session_start(); #Esta funcion debe ser llamada antes de un output
 
 <p>Hola, inicia sesión <a href="login.php">aqui</a></p>
 <?php } ?>
-<?php include 'pie.php'?>
+
 </body>
 </html>
