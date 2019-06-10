@@ -1,5 +1,5 @@
 <?php
-$id=$_GET["id_mascota"];
+$id=$_GET["id_masc"];
 $pdo=new PDO ("mysql:host=localhost;dbname=AdoptMe;charset=utf8","root","");
 $resultado=$pdo->query("SELECT * FROM mascota WHERE id_mascota='$id' ");
 $fila=$resultado->fetch();
