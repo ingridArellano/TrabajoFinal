@@ -1,3 +1,4 @@
+<link rel="stylesheet" a href="estilos/hojaAdoptar.css">
 <?php
 $sexo=$_POST["sexo"];
 $tamaño=$_POST["tamaño"];
@@ -24,6 +25,5 @@ $pdo = new PDO("mysql:host=localhost;dbname=AdoptMe;charset=utf8","root","");
                 <a class="prueba" href="login.php?id=<?php echo $fila["id_masc"]?>">Conoceme</a>
             </div> 
 
-     <?php } ?>
-
+<?php } ?>
 </div>

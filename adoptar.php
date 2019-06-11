@@ -1,5 +1,34 @@
 <?php
 $pdo=new PDO ("mysql:host=localhost;dbname=AdoptMe;charset=utf8","root","");
+$mysqli = new mysqli("localhost", "root", "", "AdoptMe");
+
+$where="";
+$sexo=$_POST['sexo_masc'];
+$tamaño=$_POST['tamaño_masc'];
+
+if (isset($_POST['buscar'])){
+
+	if (!isset($_POST['tamaño_masc']))
+	{
+		$where="WHERE sexo_masc='$sexo' ";
+	}
+
+	else if (!isset($_POST['sexo_masc']))
+	{
+		$where="WHERE tamaño_masc='$tamaño' ";
+	}
+
+	else
+	{
+		$where="WHERE tamaño_masc= '$tamaño' and sexo_masc='$sexo'";
+	}
+}
+
+
+$mascotas="SELECT * FROM mascotas $where";
+$resMascotas=$pdo->query($mascotas);
+$resMascota=$pdo->query($mascotas);
+
 ?>
 
 <!DOCTYPE html>
@@ -17,15 +46,29 @@ $pdo=new PDO ("mysql:host=localhost;dbname=AdoptMe;charset=utf8","root","");
 <h1>¡AdoptMe al rescate!</h1>
 <div class="seleccion">
     <h2>¡Encuentra a tu compañero ideal!</h2>
-    <form action="procesar_busqueda.php" method="POST">
+    <form method="POST">
         <div>
-        <select name="sexo" id="sexo">
-            <option value="">Sexo</option>
-            <option value="Hembra">Hembra</option>
-            <option value="Macho">Macho</option>
+        <select name="sexo_masc" id="sexo">
+        <option value="">Sexo</option>
+        <?php
+			while ($registroMascotas = $resMascotas->fetch_array(MYSQLI_BOTH)) {
+				echo '<option value="'.$registroMascotas['sexo_masc'].'">'.$registroMascotas['sexo_masc'].'</option>';
+				}
+		?>
         </select>
         </div>
-
+        <select name="tamaño_masc" id="tamaño">
+            <option value="">Tamaño</option>
+					<?php
+						while ($registro2 = $resMascotas->fetch()) {
+						echo '<option value="'.$registro2['tamaño_masc'].'">'.$registro2['tamaño_masc'].'</option>';
+						}
+					?>
+        </select>
+        <br>
+        </div>
+        <button name="buscar" type="submit">Buscar</button>
+<!--
         <div>
         <select name="tamaño" id="tamaño">
             <option value="">Tamaño</option>
@@ -77,18 +120,19 @@ $pdo=new PDO ("mysql:host=localhost;dbname=AdoptMe;charset=utf8","root","");
       
         <input type="submit" value="Buscar">
 
-
+-->
     </form>
 
 </div>
 
 <div class="conte_padre">
     <?php 
-    foreach ($pdo->query("SELECT * FROM mascotas") as $fila) {
+    while ($registroMascota = $resMascota->fetch()){
     ?>
 
         <div class="hijo a">
         <img class="imagen-cuadro" src="http://cdn.lavozdesanjusto.com.ar/Imagenes/1200Image1534794eb6f149ba9ed94d6fa86fd45b.jpg" alt="">
+        <?php echo $registroMascota['nombre_mascota'] ?>
         <a class="prueba" href="login.php">Conóceme</a>
         </div> 
 
