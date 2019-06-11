@@ -7,8 +7,10 @@
  $fila=$resultado->fetch();
  
  ?>
+ <?php include 'cabecera.php'?>
+
 <body>
-<?php include 'cabecera.php'?>
+
 <h1>AdoptMe</h1>
     
     
@@ -79,6 +81,7 @@
     </script>
 
 <?php include 'pie.php'?>
+
 </body>
 
 </html>
