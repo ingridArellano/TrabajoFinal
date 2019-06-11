@@ -13,6 +13,21 @@ body{
 
 
 }
+.menu{
+    background-color: lightblue ;
+    margin: 0 auto ;
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    padding: 0 5px 5px 5px;
+}
+.menu select{
+  
+        width: 200px;
+        border-radius: 5px;
+        margin: 10px 50px;
+    
+}
 .hijo{
     width:25%;
     border:2px solid skyblue;
