@@ -1,5 +1,13 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+       
+ 
+}
 body{
     background-color: bisque;
+
     
  
 }
@@ -24,22 +32,99 @@ th, td{
    text-align:center;
    margin: 10px auto;
 }
-.imagen{
-    width:250px;
-    height:250px;
-    display:block;
-    margin: 5px auto;
+
+
+.cuadrito{
+    width:360px;
+    background: #f1f1f1;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:(-50%, -50%);
+
 
 }
-.aceptar{
-    display: inline-block;
-    font-size: 16px;
-    color: black;
-    background-color: greenyellow;
-    padding: 8px 15px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align:center;
+.seccion_arriba{
+    height:500px;
+    overflow: hidden;
+    background:yellow;
+    position: relative;
+    
 }
+#imagen{
+    width:350px;
+    height:250px;
+}
+.nav_imagen{
+    text-align: center;
+}
+.nav_imagen img{
+    width:80px;
+    height:50px;
+    border:2px solid green;
+
+}
+.nav_imagen img:hover{
+    
+    border-color:pink;
+    
+}
+
+.descripcion{
+    
+   position:absolute;
+   top: 20px; 
+   right: 20px;
+   color:blue;
+   font-size: 20px;
+      
+}
+.seccion_abajo{
+    padding:25px;
+    
+}
+.name{
+    text-transform: uppercase;
+    font-size: 25px;
+    color:black;
+
+    
+}
+
+.details{
+    
+    font-size: 15px;
+    opacity: 0.6;
+    
+}
+.btn{
+    
+        display: block;
+        font-size: 16px;
+        color: black;
+        background-color: greenyellow;
+        padding: 8px 15px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align:center;
+        margin-top: 10px;
+        transition: 0.3s;
+
+    }
+.btn:hover{
+    
+        background: pink;
+        
+        
+    }
+
+
+
+
+
+
+
+
+

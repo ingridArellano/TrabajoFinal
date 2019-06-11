@@ -1,0 +1,134 @@
+body{
+  
+    margin: 0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: red;
+    font-family: Cambria, Cochin, Georgia;
+
+
+}
+.bigBox{
+  
+    width: 1200px;
+    margin: 0 auto; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    
+
+}
+.bigBox .box{
+  
+    position: relative;
+    padding: 80px 40px  40px;
+    transition: 0.5s;
+    text-align: center;
+    background: pink;
+    
+}
+.bigBox .box:hover{
+    background: blueviolet;
+      
+  }
+.bigBox .box p{
+  margin:0;
+  padding: 0;
+  transition: 0.5s;
+    
+}
+.bigBox .box h4{
+    margin: 20px 0 0;
+    padding: 0;
+    transition: 0.5s;
+    font-size: 18px;
+    color:black;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    
+  }
+  .bigBox .box h4 span{
+    font-weight: 600;
+    font-size: 14px;
+    color:blue;
+    transition: 0.5s;
+    
+    
+  }
+  .bigBox .box:hover p,  .bigBox .box:hover h4,  .bigBox .box:hover h4 span{
+   color:white;
+
+  }
+.bigBox .box .imgBox{
+    position: absolute;
+    top:-60px;
+    left:50%;
+    transform: translateX(-50%);
+    width:120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+
+
+  }
+  .bigBox .box:before{
+    content: ''; 
+    position: absolute;
+    top:20px;
+    right:40px;
+    width:80px;
+    height: 80px;
+    background: url(https://banner2.kisspng.com/20180331/pcq/kisspng-computer-icons-quotation-citation-symbol-quote-5abfbdbfee3401.5968703515225153919757.jpg);
+    background-size:cover;
+    opacity: 0.05;
+    pointer-events: none;
+    transition:0.5s;
+
+  }
+  .bigBox .box:hover:before{
+ 
+    transform:translateY(-60px);
+    opacity: 1;
+
+  }
+  .bigBox .box:after{
+    content:''; 
+    position: absolute;
+    bottom:20x;
+    left:40px;
+    width:80px;
+    height: 80px;
+    background: url(https://banner2.kisspng.com/20180331/pcq/kisspng-computer-icons-quotation-citation-symbol-quote-5abfbdbfee3401.5968703515225153919757.jpg);
+    background-size:cover;
+    opacity: 0.05;
+    pointer-events: none;
+    transition:0.5s;
+    transform: rotate(180deg) translateY(0px);
+
+  }
+  .bigBox .box:hover:after{
+ 
+    transform:rotate(180deg) translateY(-60px);
+    opacity: 1;
+
+  }
+
+  @media(max-width:768px)
+  
+  {
+ 
+    .bigBox .box
+     {
+ 
+    margin-top:80px;
+  }
+}
+
+
+
