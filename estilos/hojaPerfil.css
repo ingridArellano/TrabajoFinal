@@ -1,0 +1,45 @@
+body{
+    background-color: bisque;
+    
+ 
+}
+
+
+table{
+    border:2px solid green;
+    border-collapse:collapse;
+    margin: 20px 15px;
+    
+ 
+}
+
+th, td{
+    border:1px solid green;
+}
+
+.tablita{
+    margin: 0 auto;
+}
+.centrar{
+   text-align:center;
+   margin: 10px auto;
+}
+.imagen{
+    width:250px;
+    height:250px;
+    display:block;
+    margin: 5px auto;
+
+}
+.aceptar{
+    display: inline-block;
+    font-size: 16px;
+    color: black;
+    background-color: greenyellow;
+    padding: 8px 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align:center;
+}
