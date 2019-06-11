@@ -14,36 +14,41 @@
     </style>
 </head>
 <body>
+
+    <?php if(isset($_GET["error"]) && $_GET["error"] == "faltancampos") { ?>
+        <p style="color:red"> Faltan campos : llénelos</p>
+    <?php } ?>
+
     <div>
         <img src="imagenes/contacto.png" alt="">
     </div>
 
     <div class="padre">
-        <form action="" method="post">
+        <form action="procesar_contacto.php" method="post">
 
             <div class="hijo">
                 <label>Nombres:</label>
-                <input class="inputt" type="text" name="n">
+                <input class="inputt" type="text" name="nombre">
             </div>
             
             <div class="hijo">
                 <label>Apellidos:</label>
-                <input class="inputt" type="text" name="a">
+                <input class="inputt" type="text" name="apellido">
             </div>
 
             <div class="hijo">
                 <label>CorreoElectrónico:</label>
-                <input class="inputt" type="text" name="c">
+                <input class="inputt" type="text" name="correo">
             </div>
             
             <div class="hijo">
                 <label>Asunto:</label>
-                <input class="inputt" type="text" name="as">
+                <input class="inputt" type="text" name="asunto">
             </div>
 
             <div class="hijo">
                 <label>Mensaje:</label>
-                <input class="inputt" type="text" name="m">
+                <input class="inputt" type="text" name="mensaje">
             </div>
 
             <div class="hijo">
@@ -62,7 +67,7 @@
                                  manipulación de sus datos.</label>
             </div>
 
-            <button class="boton">Enviar</button>
+            <button type="submit" class="boton">Enviar</button>
 
         </form>
     </div>
