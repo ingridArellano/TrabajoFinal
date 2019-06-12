@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 11-06-2019 a las 00:27:41
+-- Tiempo de generación: 12-06-2019 a las 04:51:30
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.2.17
 
@@ -39,25 +39,6 @@ CREATE TABLE `mascotas` (
   `espacio_req` varchar(15) NOT NULL,
   `tiempo_solo` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `usuario`
---
-
-CREATE TABLE `usuario` (
-  `id_usuario` int(11) DEFAULT NULL,
-  `usuario` varchar(100) NOT NULL,
-  `contraseña` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `usuario`
---
-
-INSERT INTO `usuario` (`id_usuario`, `usuario`, `contraseña`) VALUES
-(NULL, 'admin', '12345');
 
 -- --------------------------------------------------------
 
