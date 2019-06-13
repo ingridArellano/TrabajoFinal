@@ -15,6 +15,7 @@
 </div>
 <section class="bigBox">
   <div class="inner">
+  <h1>Testimonials</h1>
     <div class="row">
     
         <div class="col">
@@ -23,38 +24,56 @@
                 <div class="imgBox"> 
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDRLnTXLMYOZq54hSlmtjH_7FBVuM8RZWb10zBrMJhZzYmxRnN" alt="">
                 </div>
+                <h4>Someone Famous<br><span>Cara Develigne</span></h4>
                 <p>Lorem, ipsum dolor sit amet 
                     consectetur adipisicing elit. Saepe 
                     pariatur consequuntur atque fuga eaque
                     eius dolores natus nam accusantium iusto placeat obcaecati, ut nostrum blanditiis aliquid, quisquam eos veritatis fugiat?</p>
-                <h4>Someone Famous<br><span>Cara Develigne</span></h4>
+                
 
             </div>
         </div>
         <div class="col">
 
             <div class="box">
-                <div class="imgBox">
+                <div class="imgBox"> 
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDRLnTXLMYOZq54hSlmtjH_7FBVuM8RZWb10zBrMJhZzYmxRnN" alt="">
-
                 </div>
+                <h4>Someone Famous<br><span>Cara Develigne</span></h4>
                 <p>Lorem, ipsum dolor sit amet 
                     consectetur adipisicing elit. Saepe 
                     pariatur consequuntur atque fuga eaque
                     eius dolores natus nam accusantium iusto placeat obcaecati, ut nostrum blanditiis aliquid, quisquam eos veritatis fugiat?</p>
-                <h4>Someone Famous<br><span>Cara Develigne</span></h4>
+                
 
-            </div>
+                </div>
         </div>
+        <div class="col">
+
+            <div class="box">
+                <div class="imgBox"> 
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDRLnTXLMYOZq54hSlmtjH_7FBVuM8RZWb10zBrMJhZzYmxRnN" alt="">
+                </div>
+                <h4>Someone Famous<br><span>Cara Develigne</span></h4>
+                <p>Lorem, ipsum dolor sit amet 
+                    consectetur adipisicing elit. Saepe 
+                    pariatur consequuntur atque fuga eaque
+                    eius dolores natus nam accusantium iusto placeat obcaecati, ut nostrum blanditiis aliquid, quisquam eos veritatis fugiat?</p>
+                
+
+                </div>
+        </div>
+       
     </div>
-    </div>
+   </div>
 
 
-    </section>
+</section>
     <div> SECIION DE COMENTARIOS
     </div>
+    <br>
 
 
-    
+<?php include 'pie.php'?>  
 </body>
 </html>
