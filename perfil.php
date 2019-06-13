@@ -7,12 +7,15 @@
  $fila=$resultado->fetch();
  
  ?>
- <?php include 'cabecera.php'?>
+ 
 
 <body>
+<?php include 'cabecera.php'?>
 
-<h1>AdoptMe</h1>
-    
+    <div class="middle">
+                <h1>Animation</h1>
+            </div>
+
     
     <div class="cuadrito">
        <div class="seccion_arriba">
@@ -25,13 +28,7 @@
                 <img onclick="cambiar_imagen(this)" src="https://seguros.elcorteingles.es/admin/assets/uploads/files/images/thumbnails_l/EL-PERRO-NO-BEBE-AGUA.jpg" alt="">
 
             </div>
-
-            <div class="descripcion">
-        
-            <?php echo $fila["nombre_masc"] ?>
-            
-            </div>
-
+        </div>
         <div class="seccion_abajo">
             <table class="tablita">
             <div class="name"><?php echo $fila["nombre_masc"] ?>
@@ -68,7 +65,7 @@
                 
         </div>
     </div>
-        
+   
     
 
     <script type="text/javascript">
