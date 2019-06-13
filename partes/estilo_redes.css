@@ -1,0 +1,31 @@
+#redes-sociales{
+    width: 100px;
+    height: 150px;
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+}
+#redes-sociales a{
+    display: block;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    line-height: 40px;
+    color: #FFF;
+    transition: all .3s linear;
+}
+#redes-sociales a:hover{
+    width: 150px;
+}
+.facebook{
+    background-color: #3b5998;
+}
+.twitter{
+    background-color: #00abf0;
+}
+.gplus{
+    background-color: #d95232;
+}
+.instagram{
+    background-color: #ae181f;
+}
