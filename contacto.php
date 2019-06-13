@@ -25,8 +25,7 @@
         <img src="imagenes/contacto.png" alt="">
     </div>
 
-    <div class="padre">
-        <form action="procesar_contacto.php" method="post">
+    <form action="procesar_contacto.php" method="post">
 
         <label class="labell" >Nombres:</label>
         <input class="inputt" type="text" name="nombre">
@@ -35,7 +34,7 @@
         <input class="inputt" type="text" name="apellido">
 
         <label class="labell" >Correo Electrónico:</label>
-        <input class="inputt" type="text" name="correo">
+        <input class="inputt" type="email" name="correo">
 
         <label class="labell" >Asunto:</label>
         <input class="inputt" type="text" name="asunto">
@@ -61,8 +60,7 @@
 
         <button type="submit" class="inputt">Enviar</button>
 
-        </form>
-    </div>  
+    </form>
 
 </body>
 </html>
