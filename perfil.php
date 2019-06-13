@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="estilos/hojaPerfil.css">
 
 <?php
- $id=$_GET["id"];
+
  $pdo=new PDO ("mysql:host=localhost;dbname=AdoptMe;charset=utf8","root","");
  $resultado=$pdo->query("SELECT * FROM mascotas WHERE id_masc='$id' ");
  $fila=$resultado->fetch();
