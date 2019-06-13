@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="estilo_campañas.css">
 </head>
 <body>
+
   <section>
     <div class="container">
       <header>
-        <h1>Latest News</h1>
+        <h1>Preguntas Frecuentes</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse laborum, officia delectus corrupti modi natus?</p>
       </header>
 
@@ -21,7 +22,7 @@
           <div class="blogContent">
             <h3>A Chair of Million <span>Art</span></h3>
             <p>By <a href="#">Jhon Doe</a> | <a href="#">Nov 21, 2018</a></p>
-            <a href="#" class="btn">Read More</a>
+            <a href="https://blog.cuidamimascota.com/cuidados-de-un-perro-cuidado-de-mascotas/" class="btn">Read More</a>
           </div>
         </div>
         <div class="singleBlog">
@@ -51,5 +52,6 @@
       </main>
     </div>
   </section>
+
 </body>
 </html>

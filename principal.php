@@ -15,40 +15,39 @@
     <div class="slider">
         <ul>
             <li>
-                <img src="http://dominicushoeve.com/wp-content/uploads/ktz/latest-high-resolution-wallpaper-1920x1080-70558-pictures-high-resolution-wallpaper-30whtvl34j4r12m8b0c1sa.jpg" alt="">
+                <img src="https://cdn.atv.pe/files/77ff5315-0a60-4c75-b7c2-b19ab114781a.jpg" alt="">
             </li>
             <li>
-                <img src="http://youghaltennisclub.ie/wp-content/uploads/2014/06/Tennis-Wallpaper-High-Definition-700x300.jpg" alt="">
+                <img src="https://assets.trome.pe/files/article_main/uploads/2017/09/29/59cf18f5ebc98.jpeg" alt="">
             </li>
             <li>
-                <img src="http://welltechnically.com/wp-content/uploads/2013/08/android-wallpapers-700x300.jpg" alt="">
+                <img src="http://wikifaunia.com/wp-content/uploads/2014/10/mascotas-1.png" alt="">
             </li>
             <li>
-                <img src="http://welltechnically.com/wp-content/uploads/2013/09/android-widescreen-wallpaper-14165-hd-wallpapers-700x300.jpg" alt="">
+                <img src="https://www.mujerde10.com/wp-content/uploads/2016/03/mascotas2.jpg" alt="">
             </li>
         </ul>
     </div>
 
     <div class="padre">
-
-        <div class="adopta">
-            <img class="partedos" src="https://img.blogs.es/anexom/wp-content/uploads/2018/07/23815272238_77f1b41a56_k.jpg">
+        <div class="partedos">
+            <img class="parte" src="https://img.blogs.es/anexom/wp-content/uploads/2018/07/23815272238_77f1b41a56_k.jpg">
             <div class="boton">
                 <a class="tipo" href="adopta.php"><input type="button" value="ADOPTA"></a>
                 <p>¿Buscas una mascota? Elige una y cambia tu vida y la de él.</p>
             </div>
         </div>
 
-        <div class="ayuda">
-            <img class="partedos" src="https://misanimales.com/wp-content/uploads/2018/09/beneficios-para-una-persona-soltera-de-tener-una-mascota.jpg">
+        <div class="partedos">
+            <img class="parte" src="https://misanimales.com/wp-content/uploads/2018/09/beneficios-para-una-persona-soltera-de-tener-una-mascota.jpg">
             <div class="boton">
-                <a class="tipo" href="campaña.php"><input type="button" value="AYUDA"></a>
+                <a class="tipo" href="doyenadopcion.php"><input type="button" value="AYUDA"></a>
                 <p>¿Amas a las mascotas? Unete y contribuye a ser uno de los programas mas grandes de voluntariado</p>
             </div>
         </div>
 
-        <div class="contribuye">
-            <img class="partedos" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpCAjTNSKMBxtEZhwILHkZ0tzRoS8yck57yeGu_UlXub_3ocx1CQ">
+        <div class="partedos">
+            <img class="parte" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpCAjTNSKMBxtEZhwILHkZ0tzRoS8yck57yeGu_UlXub_3ocx1CQ">
             <div class="boton">
                 <a class="tipo" href="blog.php"><input type="button" value="CONTRIBUYE"></a>
                 <p>Estamos en constante actualización por ello denos tu opinión y generarás mas valor tanto para ti como para los de ADOPTME.</p>
@@ -97,23 +96,38 @@
         </div>
     </div>
 
-    <div class="convence">
-        <h1>¿AÚN NO TE CONVENCE ADOPTAR?</h1>
-        <div class="peque">
-            <div class="mini">
-                <img src="http://web.optimusveterinaria.com/ficheros/que_es/4.png">
+    <div class="grande">
+        <h1 class="h">¿AÚN NO TE CONVENCE ADOPTAR?</h1>
+        <div class="convence">
+            <div class="convence1">
+                <img class="peque" src="https://irp-cdn.multiscreensite.com/5cf97781/MOBILE/png/051.png">
             </div>
-            <div class="mini">
+            <div class="convence2">
                 <ul>
-                    <li>hola ADOPTME</li>
-                    <li>hola ADOPTME</li>
-                    <li>hola ADOPTME</li>
-                    <li>hola ADOPTME</li>
-                    <li>hola ADOPTME</li>
+                    <li>
+                        <strong style="color:aquamarine">Muchas mascotas abandonadas en las calles del Perú.</strong>
+                        <br><strong>AdoptMe permite a una mascota ser rescatada.</strong>
+                    </li>
+                    <li>
+                        <strong style="color:aquamarine">Adoptando ayudas a desincentivar una industria donde se comercializan muchas mascotas al año, maltratando a madres y pequeños.</strong>
+                    </li>
+                    <li>
+                        <strong style="color:aquamarine">Tendrás el privilegio de compartir tu vida al lado de un compañero que la cambiará para siempre.</strong>
+                    </li>
+                    <li>
+                        <strong style="color:aquamarine">¡Ahorra adoptando una mascota en AdoptMe!</strong>
+                        <br><strong>obteniendo beneficios que faciliten la adopción de tu mascota.</strong>
+                    </li>
+                    <li>
+                        <strong style="color:aquamarine">Eligiendo adoptar contribuirás a la construcción de un mundo mejor para todas las mascotas.</strong>
+                    </li>
                 </ul>
             </div>
         </div>
+    </div>
 
+    <div class="ya">
+        <a href="adopta.php"><input class="botonya" type="button" value="¡ADOPTA UNA MASCOTA AQUÍ!"></a>
     </div>
     
     <?php include 'pie.php'; ?>
