@@ -17,7 +17,11 @@
 </head>
 <body>
 
-    <form action="" method="">
+    <?php if(isset($_GET["error"]) && $_GET["error"] == "faltancampos") { ?>
+        <p style="color:red"> Faltan campos : llénelos</p>
+    <?php } ?>
+
+    <form action="procesar_adoptYa.php" method="post">
 
         <h2>Ficha de postulación a adopción</h2>
         
@@ -75,12 +79,12 @@
                                                         
         </select>
         
-        <input class ="inputt" type="number" name="celular" placeholder="Teléfono móvil">
-        <input class ="inputt" type="number" name="telefono" placeholder="Teléfono fijo">
+        <input class ="inputt" type="number" maxlength="9" name="celular" placeholder="Teléfono móvil">
+        <input class ="inputt" type="number" maxlength="9" name="telefono" placeholder="Teléfono fijo">
         
         <input class ="inputt" type="date" name="fechaNacimiento" placeholder="Fecha de Nacimiento">
         <input class ="inputt" type="number" maxlength="8" name="dni" placeholder="DNI">
-        
+
         <input class ="inputt" type="email" name="correo" placeholder="Correo Electrónico">
         
         <select class ="inputt" name="estadoCivil">
@@ -90,14 +94,15 @@
                 <option value="viudo">Viudo</option>
                 <option value="divorciado">Divorciado</option>
         </select>
+
         <input class ="inputt" type="text" name="ocupacion" placeholder="Ocupación">
         
         <input class ="inputt" type="text" name="centroET" placeholder="Centro de trabajo/estudio">
         
-            <input type="checkbox" id="tos" name="tos" value="tos" checked>
-            <label class="label2" for="tos">Deseo recibir información de AdoptMe en mi correo.</label>
+        <input type="checkbox" id="tos" name="tos" value="tos" checked>
+        <label class="label2" for="tos">Deseo recibir información de AdoptMe en mi correo.</label>
 
-        <button type="submit">Postular</button>
+        <button type="submit" class="inputt">Postular</button>
     
     </form>
     
