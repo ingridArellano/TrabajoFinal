@@ -1,9 +1,8 @@
-.padre {
-    background-color: lightblue ;
-    margin: 0 auto ;
-    text-align: justify;
-    width: 500px;
-    padding: 0 5px 5px 5px;
+body {
+    background-image: url(imagenes\animalesDomesticos.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
 }
 
 img {
@@ -11,21 +10,63 @@ img {
     margin: 0 auto;
 }
 
-.hijo {
-    margin: 10px auto;
+form {
+    width: 500px;
+    margin: auto;
+    background: rgba(1, 1, 2, 0.4);
     padding: 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
 }
 
-label {
+.labell {
+    color: #fff;
+    text-align: center;
+    
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.label2 {
     margin: .5em 0 0 0;
+    text-align: justify;
+    color: black;
+    font-size: 20px;
 }
 
-.inputt {
+.inputt, textarea {
     width: 100%;
-    border-radius: 5px;
+    margin: 5px auto ;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+    border-radius: 8px;
 }
 
-.boton {
-    display: block;
-    margin: 0 auto;
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+button {
+    background: crimson;
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    form{
+        width:100%;
+    }
 }
