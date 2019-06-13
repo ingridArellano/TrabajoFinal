@@ -84,10 +84,11 @@
 
   .bigBox .box:before{
     content: ''; 
-    top:20px;
-    right:40px;
+    position: absolute;
+    top:150px;
+    right: 40px;
     width:80px;
-    height: 80px;
+    height:80px;
     background: url(https://pngriver.com/wp-content/uploads/2018/04/Download-Closing-Quotation-Mark-Symbol-Png-Image-79193-For-Designing-Projects.png);
     background-size:cover;
     opacity: 0.05;
@@ -97,15 +98,15 @@
   }
   .bigBox .box:hover:before{
  
-    transform:translateY(-60px);
+    transform:translateY(-20px);
     opacity: 1;
 
   }
   .bigBox .box:after{
     content:''; 
     position: absolute;
-    bottom:20x;
-    left:40px;
+    bottom:50x;
+    left:15px;
     width:80px;
     height: 80px;
     background: url(https://pngriver.com/wp-content/uploads/2018/04/Download-Closing-Quotation-Mark-Symbol-Png-Image-79193-For-Designing-Projects.png);
@@ -118,7 +119,7 @@
   }
   .bigBox .box:hover:after{
  
-    transform:rotate(180deg) translateY(-60px);
+    transform:rotate(180deg) translateY(-15px);
     opacity: 1;
 
   }
