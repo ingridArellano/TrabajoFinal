@@ -2,6 +2,8 @@
 
 <?php
 
+ $id=$_GET["id"];
+
  $pdo=new PDO ("mysql:host=localhost;dbname=AdoptMe;charset=utf8","root","");
  $resultado=$pdo->query("SELECT * FROM mascotas WHERE id_masc='$id' ");
  $fila=$resultado->fetch();
@@ -61,7 +63,7 @@
             </tr>
             </table>
             
-            <a class="btn" href="inscribete.php?id=<?php echo $registroMascota["id_masc"]?>">AdoptMe ya!</a>
+            <a class="btn" href="adoptYa.php">AdoptMe ya!</a>
                 
         </div>
     </div>

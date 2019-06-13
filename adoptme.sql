@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.7.0
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-06-2019 a las 09:21:55
--- Versión del servidor: 10.1.36-MariaDB
--- Versión de PHP: 7.2.11
+-- Tiempo de generación: 13-06-2019 a las 23:37:57
+-- Versión del servidor: 10.1.25-MariaDB
+-- Versión de PHP: 7.1.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -66,6 +66,35 @@ CREATE TABLE `mascotas` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `postulante`
+--
+
+CREATE TABLE `postulante` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(100) NOT NULL,
+  `apellido` varchar(100) NOT NULL,
+  `direccion` varchar(200) NOT NULL,
+  `distrito` varchar(100) NOT NULL,
+  `celular` char(9) NOT NULL,
+  `telefono` char(9) NOT NULL,
+  `fechaNacimiento` date NOT NULL,
+  `dni` char(8) NOT NULL,
+  `correo` varchar(100) NOT NULL,
+  `estadoCivil` varchar(20) NOT NULL,
+  `ocupacion` varchar(100) NOT NULL,
+  `centroET` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `postulante`
+--
+
+INSERT INTO `postulante` (`id`, `nombre`, `apellido`, `direccion`, `distrito`, `celular`, `telefono`, `fechaNacimiento`, `dni`, `correo`, `estadoCivil`, `ocupacion`, `centroET`) VALUES
+(1, 'LILI', 'LAZARO', 'SDVFSDG', '3', '123456789', '123456789', '2019-06-02', '12345678', 'wer@gmail.com', 'soltero', 'ESTUDIANTE', 'USIL');
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `usuarios`
 --
 
@@ -99,6 +128,12 @@ ALTER TABLE `mascotas`
   ADD PRIMARY KEY (`id_masc`);
 
 --
+-- Indices de la tabla `postulante`
+--
+ALTER TABLE `postulante`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
@@ -113,19 +148,21 @@ ALTER TABLE `usuarios`
 --
 ALTER TABLE `contacto`
   MODIFY `idContacto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
 --
 -- AUTO_INCREMENT de la tabla `mascotas`
 --
 ALTER TABLE `mascotas`
   MODIFY `id_masc` int(11) NOT NULL AUTO_INCREMENT;
-
+--
+-- AUTO_INCREMENT de la tabla `postulante`
+--
+ALTER TABLE `postulante`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-COMMIT;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
