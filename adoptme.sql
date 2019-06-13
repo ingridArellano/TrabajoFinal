@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-06-2019 a las 04:51:30
--- Versión del servidor: 10.1.38-MariaDB
--- Versión de PHP: 7.2.17
+-- Tiempo de generación: 13-06-2019 a las 09:21:55
+-- Versión del servidor: 10.1.36-MariaDB
+-- Versión de PHP: 7.2.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -21,6 +21,29 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `adoptme`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `contacto`
+--
+
+CREATE TABLE `contacto` (
+  `idContacto` int(11) NOT NULL,
+  `nombre` varchar(100) NOT NULL,
+  `apellido` varchar(100) NOT NULL,
+  `correo` varchar(100) NOT NULL,
+  `asunto` varchar(300) NOT NULL,
+  `mensaje` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `contacto`
+--
+
+INSERT INTO `contacto` (`idContacto`, `nombre`, `apellido`, `correo`, `asunto`, `mensaje`) VALUES
+(1, 'Lili', 'Lazaro', 'lili@gmail.com', 'Menor de edad', 'Soy menor de edad quisiera saber como debo hacer para adoptar una mascota'),
+(2, 'Lili', 'Lazaro', 'lili@gmail.com', 'Menor de edad', 'gmuygu');
 
 -- --------------------------------------------------------
 
@@ -64,6 +87,12 @@ INSERT INTO `usuarios` (`id_usuario`, `usuario`, `contraseña`) VALUES
 --
 
 --
+-- Indices de la tabla `contacto`
+--
+ALTER TABLE `contacto`
+  ADD PRIMARY KEY (`idContacto`);
+
+--
 -- Indices de la tabla `mascotas`
 --
 ALTER TABLE `mascotas`
@@ -78,6 +107,12 @@ ALTER TABLE `usuarios`
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
+
+--
+-- AUTO_INCREMENT de la tabla `contacto`
+--
+ALTER TABLE `contacto`
+  MODIFY `idContacto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `mascotas`
