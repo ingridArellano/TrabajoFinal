@@ -2,7 +2,10 @@
   margin: 0;
   padding: 0;
   font-family: "montserrat",sans-serif;
+  
 }
+
+
 .bigBox{
   
   padding: 40px 0;
@@ -124,19 +127,42 @@
 
   }
 
- @media screen and (max-width:960px) {
-.col{
-  flex: 100%;
-  max-width: 80%;
+.middle{
+  position: relative;
+	margin: 0 auto;
+    
 }
+.middle h1{
+	font-size: 100px;
+  text-transform: uppercase;
+  text-align: center;
+	font-weight: 900;
+	color: #2c3e5036;
+	background-image: url(bg.png);
+	-webkit-background-clip:text;
+	animation: water 15s infinite;
 }
-
-@media screen and (max-width:600px) {
-.col{
-  flex: 100%;
-  max-width: 100%;
+@keyframes water {
+	from{
+		background-position: left 0 top 0;
+	}
+	to{
+		background-position: left 2000px top 0;
+	}
 }
-}
-
-
+@media screen and (max-width:960px) {
+  .col{
+    flex: 100%;
+    max-width: 80%;
+  }
+  }
+  
+  @media screen and (max-width:600px) {
+  .col{
+    flex: 100%;
+    max-width: 100%;
+  }
+  }
+  
+  
 

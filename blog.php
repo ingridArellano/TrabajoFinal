@@ -10,12 +10,13 @@
 </head>
 <body>
 <?php include 'cabecera.php'?>
-<div>
-    ALGO MAS
+
+<div class="middle">
+	<h1>Testimonios</h1>
 </div>
 <section class="bigBox">
   <div class="inner">
-  <h1>Testimonials</h1>
+   
     <div class="row">
     
         <div class="col">
@@ -69,8 +70,7 @@
 
 
 </section>
-    <div> SECIION DE COMENTARIOS
-    </div>
+
     <br>
 
 

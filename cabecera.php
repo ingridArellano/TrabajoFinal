@@ -18,7 +18,7 @@
             <li><a href="index.php">AdoptMe</a></li>
             <li><a href="adoptar.php">Adoptar</a></li>
             <li><a href="doyenadopcion.php">Doy en Adopción</a></li>
-            <li><a href="campaña.php">Campaña</a></li>
+            <li><a href="campañas.php">Campaña</a></li>
             <li><a href="blog.php">Blog</a></li>
             <li><a href="contacto.php">Contacto</a></li>
         </ul>
