@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>AdoptYa</title>
+    <link rel="stylesheet" href="estilos/hojaContacto.css">
+    <style>
+        html { 
+            background-image: url(imagenes/adoptYa.jpg);
+            background-size: 100vw 100vh;
+            background-attachment: fixed;
+            margin: 0;
+            }
+    </style>
 </head>
 <body>
 
     <form action="" method="">
 
         <h2>Ficha de postulación a adopción</h2>
-
-        <input type="text" name="nombre" placeholder="Nombres">
-        <input type="text" name="apellido" placeholder="Apellidos">
-        <input type="text" name="direccion" placeholder="Dirección">
-        <input type="text" name="distrito" placeholder="Distrito">
-        <select name="distrito">
+        
+        <input class ="inputt" type="text" name="nombre" placeholder="Nombres">
+        <input class ="inputt" type="text" name="apellido" placeholder="Apellidos">
+        
+        <input class ="inputt" type="text" name="direccion" placeholder="Dirección">
+        
+        <select class ="inputt" name="distrito">
                             <option value="">Distrito</option>
                             <option value="1">Ancón</option>
                             <option value="2">Ate</option>
@@ -64,26 +74,28 @@
                             <option value="44">Villa María del Triunfo</option>
                                                         
         </select>
-
-        <input type="number" name="celular" placeholder="Teléfono móvil">
-        <input type="number" name="telefono" placeholder="Teléfono fijo">
-        <input type="date" name="fechaNacimiento" placeholder="Fecha de Nacimiento">
-        <input type="number" maxlength="8" name="dni" placeholder="DNI">
-        <input type="email" name="correo" placeholder="Correo Electrónico">
-
-        <select name="estadoCivil">
+        
+        <input class ="inputt" type="number" name="celular" placeholder="Teléfono móvil">
+        <input class ="inputt" type="number" name="telefono" placeholder="Teléfono fijo">
+        
+        <input class ="inputt" type="date" name="fechaNacimiento" placeholder="Fecha de Nacimiento">
+        <input class ="inputt" type="number" maxlength="8" name="dni" placeholder="DNI">
+        
+        <input class ="inputt" type="email" name="correo" placeholder="Correo Electrónico">
+        
+        <select class ="inputt" name="estadoCivil">
                 <option value="">Estado Civil</option>
                 <option value="soltero">Soltero</option>
                 <option value="casado">Casado</option>
                 <option value="viudo">Viudo</option>
                 <option value="divorciado">Divorciado</option>
         </select>
-        <input type="text" name="ocupacion" placeholder="Ocupación">
-        <input type="text" name="centroET" placeholder="Centro de trabajo/estudio">
-        <div>
+        <input class ="inputt" type="text" name="ocupacion" placeholder="Ocupación">
+        
+        <input class ="inputt" type="text" name="centroET" placeholder="Centro de trabajo/estudio">
+        
             <input type="checkbox" id="tos" name="tos" value="tos" checked>
-            <label for="tos">Deseo recibir información de AdoptMe en mi correo.</label>
-        </div>
+            <label class="label2" for="tos">Deseo recibir información de AdoptMe en mi correo.</label>
 
         <button type="submit">Postular</button>
     
