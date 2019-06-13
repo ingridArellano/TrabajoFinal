@@ -70,6 +70,7 @@
             <button type="submit" class="boton">Enviar</button>
 
         </form>
-    </div>
+    </div>  
+
 </body>
 </html>

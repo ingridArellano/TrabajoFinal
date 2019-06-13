@@ -11,6 +11,25 @@
     }
 ?>
 
+<?php
+# Paso 1: Leer datos de $_POST
+$nombre=$_POST['nombre'];
+$apellido=$_POST['apellido'];
+$correo=$_POST['correo'];
+$asunto=$_POST['asunto'];
+$mensaje=$_POST['mensaje'];
+
+# Paso 2: Instanciar PDO
+$pdo = new PDO("mysql:host=localhost;dbname=adoptme;charset=utf8","root",""); 
+
+# Paso 3: Construir comando:
+$sql = "INSERT INTO contacto values (NULL, '$nombre', '$apellido', '$correo', '$asunto', '$mensaje')" ;
+
+# Paso 4: Ejecutar comando
+$pdo->query($sql);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
