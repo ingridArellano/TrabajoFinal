@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blog</title>
-    <link rel="stylesheet" a href="estilos_blog.css">
+    <link rel="stylesheet" a href="estilos/estilos_blog.css">
 
 </head>
 <body>
@@ -13,6 +13,7 @@
 
 <div class="middle">
 	<h1>Testimonios</h1>
+    
 </div>
 <section class="bigBox">
   <div class="inner">
