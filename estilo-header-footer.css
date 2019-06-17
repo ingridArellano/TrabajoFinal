@@ -1,0 +1,157 @@
+.contenedor {
+    width: 100%;
+    background: rgb(114, 112, 112);
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    max-width: 1333px;
+}
+
+#boton {
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+
+.hola img {
+    height: 100px;
+}
+
+label img {
+    height: 30px;
+}
+
+header label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+
+header label:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: auto 0;
+    padding: 0;
+    justify-content: flex-end;
+    margin: 25px 0;
+}
+
+nav li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+    border-left: 1px solid white;
+}
+
+nav li:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.main-footer {
+    width: 100%;
+    min-height: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(114, 112, 112);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foo img {
+    height: 100px;
+}
+
+.foo {
+    width: 8%;
+    height: 100px;
+    margin: -20px 100px;
+}
+
+.main ul {
+    display: inline-flex;
+    list-style-type: none;
+    padding: auto 300px;
+    margin: 0 100px;
+}
+
+.main ul ul {
+    display: none;
+}
+
+.main a {
+    display: block;
+    color: #FFF;
+    padding: 15px 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    text-decoration: none;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.main li:hover {
+    background: rgba(243, 243, 243, 0.3);
+}
+
+@media (max-width:750px) {
+    header label {
+        display: block;
+        margin: 20px 0;
+    }
+    nav {
+        position: fixed;
+        background: rgb(80, 80, 80);
+        width: 40%;
+        margin: 17% -42%;
+        transition: all 0.5s;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav li a {
+        border-bottom: 1px solid #fff;
+        border-top: 1px solid #fff;
+    }
+    #boton:checked~nav {
+        margin: 80px 0;
+    }
+    header {
+        top: 0;
+    }
+    .contenedor {
+        max-width: 716px;
+    }
+    .main-footer {
+        display: block;
+        margin: 0;
+        height: 400px;
+    }
+    .main {
+        margin: 40px -21px;
+        width: 100%;
+        transition: all 0.5s;
+    }
+    .main ul {
+        display: block;
+        text-align: center;
+    }
+    .main a {
+        border: 0;
+    }
+    .foo img {
+        margin: 0 170px;
+    }
+}
