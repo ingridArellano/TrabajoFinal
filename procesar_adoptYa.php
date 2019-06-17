@@ -41,6 +41,16 @@ $pdo->query($sql);
 
 ?>
 
+<?php
+
+    $id=$_GET["id"];
+
+    $pdo=new PDO ("mysql:host=localhost;dbname=AdoptMe;charset=utf8","root","");
+    $resultado=$pdo->query("SELECT * FROM mascotas WHERE id_masc='$id' ");
+    $fila=$resultado->fetch();
+ 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,6 +73,42 @@ $pdo->query($sql);
     <p>Estimado <?php echo $_POST["nombre"] ?> <?php echo $_POST["apellido"] ?> hemos recibido su ficha de postulación a adopción. </p>
     <p>Nos comunicaremos con usted mediante su correo: <?php echo $_POST["correo"] ?> </p>
     <p>Gracias por postular. </p>
+
+    <div class="seccion_abajo">
+            <table class="tablita">
+
+                <div class="name"><?php echo $fila["nombre_masc"] ?>
+                </div>
+            
+                <tr>
+                    <th>Sexo</th>
+                    <th>Tamaño</th>
+                    <th>Peso</th>
+                    <th>Edad</th>
+                    <th>Nivel de actividad</th>
+                </tr>
+
+                <tr>
+                    <td>
+                    <?php echo $fila["sexo_masc"] ?>
+                    </td>
+                    <td>
+                    <?php echo $fila["tamaño_masc"] ?>
+                    </td>
+                    <td>
+                    <?php echo $fila["peso_masc"] ?>
+                    </td>
+                    <td>
+                    <?php echo $fila["edad_masc"] ?>
+                    <td>
+                    <?php echo $fila["nivel_act"] ?>
+                    </td>
+                
+                </tr>
+                
+            </table>
+                
+    </div>
 
 </body>
 </html>
