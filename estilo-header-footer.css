@@ -60,7 +60,6 @@ nav li:hover {
 
 .main-footer {
     width: 100%;
-    min-height: 60px;
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: rgb(114, 112, 112);
@@ -137,7 +136,7 @@ nav li:hover {
     .main-footer {
         display: block;
         margin: 0;
-        height: 400px;
+        bottom: 0;
     }
     .main {
         margin: 40px -21px;
