@@ -12,6 +12,7 @@
  
 
 <body>
+
 <?php include 'cabecera.php'?>
 
     <div class="middle">
@@ -59,24 +60,19 @@
                 <td>
                 <?php echo $fila["nivel_act"] ?>
                 </td>
-            
             </tr>
             </table>
             
-            <a class="btn" href="adoptYa.php">AdoptMe ya!</a>
+            <a class="btn" href="adoptYa.php?id=<?php echo $registroMascota["id_masc"]?>">AdoptMe ya!</a>
                 
         </div>
     </div>
-   
-    
 
     <script type="text/javascript">
         var contenedor=document.getElementById("imagen");
          function cambiar_imagen(image){
              contenedor.src=image.src;
-}
-
-    
+    }
     </script>
 
 <?php include 'pie.php'?>
