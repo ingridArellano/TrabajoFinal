@@ -62,8 +62,7 @@
                 </td>
             </tr>
             </table>
-            
-            <a class="btn" href="adoptYa.php?id=<?php echo $registroMascota["id_masc"]?>">AdoptMe ya!</a>
+                       <a class="btn" href="adoptYa.php?id=<?php echo $fila["id_masc"]?>">AdoptMe ya!</a>
                 
         </div>
     </div>

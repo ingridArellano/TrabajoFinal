@@ -1,14 +1,12 @@
 <?php
-    
-    $mascotas="SELECT * FROM mascotas $where";
-    $resMascota=$pdo->query($mascotas);
 
-    $pdo=new PDO ("mysql:host=localhost;dbname=AdoptMe;charset=utf8","root","");
-    $idd=$_GET["id"];
-    $resultado=$pdo->query("SELECT * FROM mascotas WHERE id_masc='$idd' ");
-    $fila=$resultado->fetch();
+ $id=$_GET["id"];
+
+ $pdo=new PDO ("mysql:host=localhost;dbname=AdoptMe;charset=utf8","root","");
+ $resultado=$pdo->query("SELECT * FROM mascotas WHERE id_masc='$id' ");
+ $fila=$resultado->fetch();
  
-?>
+ ?>
 
 
 <!DOCTYPE html>
@@ -116,8 +114,8 @@
         <label class="label2" for="tos">Deseo recibir información de AdoptMe en mi correo.</label>
 
         <button type="submit" class="inputt">Postular</button>
-
-        <a class="prueba" href="procesar_adoptYa.php?id=<?php echo $registroMascota["id_masc"]?>">Conoceme</a>
+        
+        <a class="prueba" href="procesar_adoptYa.php?id=<?php echo $fila["id_masc"]?>">Conoceme</a>
     
     </form>
     
