@@ -11,6 +11,10 @@
 </head>
 <body>
 <?php include 'cabecera.php'?>
+<br>
+<br>
+<br>
+<br>
 <div class="container">
     <div class="holder">
       <h2>Responsive Table</h2>
