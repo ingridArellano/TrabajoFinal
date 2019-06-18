@@ -1,11 +1,13 @@
 <?php
 
+    $idMascota=$_GET["id"];
 
- $pdo=new PDO ("mysql:host=localhost;dbname=AdoptMe;charset=utf8","root","");
+    $pdo=new PDO ("mysql:host=localhost;dbname=AdoptMe;charset=utf8","root","");
+    $resultado=$pdo->query("SELECT * FROM mascotas WHERE id_masc='$idMascota' ");
+    $fila=$resultado->fetch();
  
- 
- ?>
- 
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,12 +29,14 @@
 <body>
 
     <?php if(isset($_GET["error"]) && $_GET["error"] == "faltancampos") { ?>
-        <p style="color:red"> Faltan campos : llénelos</p>
+        <p style="color:red;font-size: 24px;text-align: center;font-weight: bold"> Faltan campos : Llénelos</p>
     <?php } ?>
 
     <form action="procesar_adoptYa.php" method="post">
 
         <h2>Ficha de postulación a adopción</h2>
+
+        <input type="hidden" name="idMascota" value="<?php echo $idMascota ?>" >
         
         <input class ="inputt" type="text" name="nombre" placeholder="Nombres">
         <input class ="inputt" type="text" name="apellido" placeholder="Apellidos">
@@ -112,9 +116,9 @@
         <label class="label2" for="tos">Deseo recibir información de AdoptMe en mi correo.</label>
         <input type="hidden" name="id_masc" value="<?php echo $id ?>">
 
-        <button type="submit" class="inputt">Postular</button>
-              
-       
+        <button type="submit" class="inputt">POSTULAR
+
+        </button>
     
     </form>
 
