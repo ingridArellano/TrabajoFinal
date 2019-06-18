@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.0
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-06-2019 a las 23:37:57
--- Versión del servidor: 10.1.25-MariaDB
--- Versión de PHP: 7.1.7
+-- Tiempo de generación: 18-06-2019 a las 20:30:01
+-- Versión del servidor: 10.1.36-MariaDB
+-- Versión de PHP: 7.2.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -63,6 +63,15 @@ CREATE TABLE `mascotas` (
   `tiempo_solo` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `mascotas`
+--
+
+INSERT INTO `mascotas` (`id_masc`, `nombre_masc`, `sexo_masc`, `tamaño_masc`, `peso_masc`, `edad_masc`, `nivel_act`, `espacio_req`, `tiempo_solo`) VALUES
+(1, 'momo', 'Macho', 'grande', '30', 3, '1', 'grande', 0),
+(2, 'MOMO', 'Macho', 'GRANDE', '30', 3, '1', 'GRANDE', 0),
+(3, 'AISHA', 'Hembra', 'PEQUEÑO', '20', 2, '1', 'PEQUEÑO', 0);
+
 -- --------------------------------------------------------
 
 --
@@ -71,6 +80,7 @@ CREATE TABLE `mascotas` (
 
 CREATE TABLE `postulante` (
   `id` int(11) NOT NULL,
+  `idMascota` int(11) NOT NULL,
   `nombre` varchar(100) NOT NULL,
   `apellido` varchar(100) NOT NULL,
   `direccion` varchar(200) NOT NULL,
@@ -89,8 +99,13 @@ CREATE TABLE `postulante` (
 -- Volcado de datos para la tabla `postulante`
 --
 
-INSERT INTO `postulante` (`id`, `nombre`, `apellido`, `direccion`, `distrito`, `celular`, `telefono`, `fechaNacimiento`, `dni`, `correo`, `estadoCivil`, `ocupacion`, `centroET`) VALUES
-(1, 'LILI', 'LAZARO', 'SDVFSDG', '3', '123456789', '123456789', '2019-06-02', '12345678', 'wer@gmail.com', 'soltero', 'ESTUDIANTE', 'USIL');
+INSERT INTO `postulante` (`id`, `idMascota`, `nombre`, `apellido`, `direccion`, `distrito`, `celular`, `telefono`, `fechaNacimiento`, `dni`, `correo`, `estadoCivil`, `ocupacion`, `centroET`) VALUES
+(1, 0, 'LILI', 'LAZARO', 'SDVFSDG', '3', '123456789', '123456789', '2019-06-02', '12345678', 'wer@gmail.com', 'soltero', 'ESTUDIANTE', 'USIL'),
+(2, 0, 'Lili', 'Del solar', 'sdadfefe', '4', '543634565', '435654', '1987-05-31', '4356356', 'lili@gmail.com', 'soltero', 'Estudiante', 'USIL'),
+(3, 0, 'Lili', 'Del solar', 'sdadfefe', '4', '543634565', '435654', '1987-05-31', '4356356', 'lili@gmail.com', 'soltero', 'Estudiante', 'USIL'),
+(4, 0, 'Lili', 'Del solar', 'sdadfefe', '4', '543634565', '435654', '1987-05-31', '4356356', 'lili@gmail.com', 'soltero', 'Estudiante', 'USIL'),
+(5, 0, 'Lili', 'Del solar', 'sdadfefe', '4', '543634565', '435654', '1987-05-31', '4356356', 'lili@gmail.com', 'soltero', 'Estudiante', 'USIL'),
+(6, 0, 'Martha', 'Lazaro', 'tgtnhgnh', '4', '963258741', '012365478', '1986-12-03', '21456398', 'mariaquispe@gmail.com', 'soltero', 'Medico', 'Ricardo Palma');
 
 -- --------------------------------------------------------
 
@@ -148,21 +163,25 @@ ALTER TABLE `usuarios`
 --
 ALTER TABLE `contacto`
   MODIFY `idContacto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
 --
 -- AUTO_INCREMENT de la tabla `mascotas`
 --
 ALTER TABLE `mascotas`
-  MODIFY `id_masc` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_masc` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
 -- AUTO_INCREMENT de la tabla `postulante`
 --
 ALTER TABLE `postulante`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;COMMIT;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
