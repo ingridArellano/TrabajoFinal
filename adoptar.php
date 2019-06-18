@@ -52,6 +52,7 @@ $resMascota=$pdo->query($mascotas);
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" a href="hojaAdoptar.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 
 </head>
 <body>
@@ -110,6 +111,7 @@ $resMascota=$pdo->query($mascotas);
     }
     ?>
  </div>
+ <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
 <?php include 'pie.php'?>
 </body>
 </html>
