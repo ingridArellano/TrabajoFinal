@@ -103,7 +103,7 @@
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcpSYY3v8pKjxQ45erkpPrq9FtZkjQGpJwwpXQ1ypdo898xqUJHw" alt="">
                 </div>
                 <h4>Medico Veterinario, Conductor de Dr. Vet<br><span>Pancho Cavero</span></h4>
-                <p>"Desde  que nací, siempre estuve en contacto con animales.   Siempre tuve el sueño de ser veterinario porque sentía que me comunicaba con ellos.  Admiraba a mi padre al verlo salvar todos los días a mis amigos de cuatro patas.</p>
+                <p>"Desde  que nací, siempre estuve en contacto con animales.   Siempre tuve el sueño de ser veterinario porque sentía que me comunicaba con ellos.  Admiraba a mi padre al verlo salvar todos los días a mis amigos de cuatro patas. !</p>
                 
 
                 </div>
