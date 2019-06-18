@@ -1,4 +1,4 @@
-.todo {
+ .todo {
     height: auto;
     width: 100%;
 }
@@ -115,13 +115,8 @@
 }
 
 .se,
-.se1,
-.se2,
 .se3,
 .se4,
-.se5,
-.se6,
-.se7,
 .se8,
 .se9,
 .se10,
@@ -142,32 +137,13 @@
     margin: 16px 0;
 }
 
-.se1 {
-    margin: -129px 675px;
-}
-
-.se2 {
-    margin: 146px 0;
-}
 
 .se3 {
-    margin: -259px 675px;
+    margin: -123px 675px;
 }
 
 .se4 {
     margin: 279px 0;
-}
-
-.se5 {
-    margin: -375px 675px;
-}
-
-.se6 {
-    margin: 275px 0;
-}
-
-.se7 {
-    margin: -255px 675px;
 }
 
 .se8 {
@@ -191,13 +167,8 @@
 }
 
 .se :focus,
-.se1 :focus,
-.se2 :focus,
 .se3 :focus,
 .se4 :focus,
-.se5 :focus,
-.se6 :focus,
-.se7 :focus,
 .se8 :focus,
 .se9 :focus,
 .se10 :focus,
@@ -214,13 +185,8 @@
 }
 
 .se label,
-.se1 label,
-.se2 label,
 .se3 label,
 .se4 label,
-.se5 label,
-.se6 label,
-.se7 label,
 .se8 label,
 .se9 label,
 .se10 label,
@@ -229,19 +195,14 @@
     margin: 10px;
 }
 
-.se7 select,
 .se3 select,
-.se6 select,
 .se input,
-.se1 input,
-.se2 input,
 .se4 input,
 .se8 input,
 .se9 input,
 .se10 input,
 .se11 input,
-.se12 input,
-.se5 textarea {
+.se12 input {
     margin: 10px;
     padding: 5px;
     width: 100%;
@@ -315,27 +276,22 @@ h2.registro {
     .hola1 :focus,
     .hola2 :focus,
     .hola3 :focus,
-    .hola4 :focus,
-    .hola5 :focus,
-    .hola6 :focus {
+    .hola4 :focus {
         box-shadow: 0 0 20px 8px #34495e;
     }
     .hola label,
     .hola1 label,
     .hola2 label,
     .hola3 label,
-    .hola4 label,
-    .hola5 label,
-    .hola6 label {
+    .hola4 label {
         margin: 10px;
     }
-    .hola5 select,
+
     .hola3 select,
     .hola input,
     .hola1 input,
     .hola2 input,
-    .hola4 input,
-    .hola6 input {
+    .hola4 input {
         margin: 10px;
         padding: 5px;
         width: 100%;
@@ -348,13 +304,8 @@ h2.registro {
         margin: 10px auto 0;
     }
     .se,
-    .se1,
-    .se2,
     .se3,
     .se4,
-    .se5,
-    .se6,
-    .se7,
     .se8,
     .se9,
     .se10,
@@ -372,13 +323,8 @@ h2.registro {
         margin: 16px 0;
     }
     .se :focus,
-    .se1 :focus,
-    .se2 :focus,
     .se3 :focus,
     .se4 :focus,
-    .se5 :focus,
-    .se6 :focus,
-    .se7 :focus,
     .se8 :focus,
     .se9 :focus,
     .se10 :focus,
@@ -393,13 +339,8 @@ h2.registro {
         margin: 10px 10px;
     }
     .se label,
-    .se1 label,
-    .se2 label,
     .se3 label,
     .se4 label,
-    .se5 label,
-    .se6 label,
-    .se7 label,
     .se8 label,
     .se9 label,
     .se10 label,
@@ -407,19 +348,15 @@ h2.registro {
     .se12 label {
         margin: 10px;
     }
-    .se7 select,
+
     .se3 select,
-    .se6 select,
     .se input,
-    .se1 input,
-    .se2 input,
     .se4 input,
     .se8 input,
     .se9 input,
     .se10 input,
     .se11 input,
-    .se12 input,
-    .se5 textarea {
+    .se12 input {
         margin: 10px;
         padding: 5px;
         width: 100%;
