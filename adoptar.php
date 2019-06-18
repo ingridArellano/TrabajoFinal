@@ -97,7 +97,7 @@ $resMascota=$pdo->query($mascotas);
     while ($registroMascota = $resMascota->fetch()){
     ?>
 
-        <div class="hijo a">
+        <div class="hijo">
 
         <img class="imagen-cuadro" src="http://cdn.lavozdesanjusto.com.ar/Imagenes/1200Image1534794eb6f149ba9ed94d6fa86fd45b.jpg" alt="">
         <p><?php echo $registroMascota["nombre_masc"] ?></p>
