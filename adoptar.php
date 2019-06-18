@@ -91,6 +91,7 @@ $resMascota=$pdo->query($mascotas);
     </form>
 
 </div>
+<br>
 
 <div class="conte_padre">
     <?php 
