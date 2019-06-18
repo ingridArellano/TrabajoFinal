@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="estilos/entry_style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&display=swap">
+ 
 </head>
 <body>
+<?php include 'cabecera.php'?>
    <div class="wrapper">
         <header class="header">
         </header>
@@ -62,6 +65,6 @@
         
 
         </div>
-    
+<?php include 'pie.php'?> 
 </body>
 </html>
