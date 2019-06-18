@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+
 body{
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
 }
 a{
   transition: all .5s;
@@ -107,32 +106,18 @@ section{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width:992px) {
-  main{
+  .mainn{
     grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   }
 }
 @media (max-width:767px) {
-  main{
+  .mainn{
     grid-template-columns: repeat(2, 1fr);
   grid-gap: 15px;
   }
-  header{
+  .headercito{
     width: 95%;
   }
   .blogContent{
@@ -141,7 +126,7 @@ section{
 }
 @media (max-width:500px) {
 
-    main{
+  .mainn{
       grid-template-columns: repeat(1, 1fr);
     }
 }
