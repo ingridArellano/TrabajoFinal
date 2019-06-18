@@ -14,7 +14,6 @@ body{
 }
 .menu{
     background-color: lightblue ;
-    position: fixed;
     width:100%;
     margin: 0 auto ;
     text-align: center;

@@ -17,55 +17,62 @@
 <br>
 <div class="container">
     <div class="holder">
-      <h2>Responsive Table</h2>
-      <p>Ipsa expedita odio autem mollitia fugiat ad repudiandae, a, tempore voluptatibus eveniet maxime eligendi suscipit! Nemo, veritatis dolore nostrum exercitationem dolor illum.</p>
+      <h2>CAMPAÑAS DE ESTERILIZACIÓN Y SALUD PARA PERROS Y GATOS -PERÚ</h2>
+      <h3>(Esterilizaciones, castraciones, servicios básicos, vacunas y más a costo social. Los 365 días del año.</h3>
+      <p>•Si tu perro/a o gato/a ha recibido alguna vacuna, para poder esterilizarla deben pasar 15 días (la mayor y mejor protección de la vacuna se alcanza al 15vo día, y si dentro de esos días se somete a algún stress como lo es la anestesia, puede que no se alcance la protección esperada, como a su vez sea normal. Además que puede afectar su salud a la hora de operarlas).
+      </p>
+      <p>
+      •Si tu perro/a o gato/a ha sido esterilizada y luego deseas vacunarla deberás esperar que pasen 10 días.</p>
+     
       <div class="responsiveTbl">
         <table>
           <thead>
             <tr>
-              <th>Rank</th>
-              <th>Full Name</th>
-              <th>Starting Price</th>
-              <th>Review</th>
-              <th>Hiring</th>
+              <th>Número</th>
+              <th>Asociaciones y Agrupaciones</th>
+              <th>Logo</th>
+              <th>Correo</th>
+              <th>Contacto</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>1</td>
-              <td>John Smith</td>
-              <td><span class="price">£40 / hr</span></td>
-              <td>9.9</td>
-              <td><a href="#" class="btn">Hire me</span></td>
+              <td>Organización Amar</td>
+              <td> <img src="https://png.pngtree.com/element_origin_min_pic/16/11/30/cb791fefda08a641b6f47113f5ad13cb.jpg" alt=""></td>
+              <td><span class="price">amar.proteccionanimal@hotmail.com</span></td>
+              <td><a href="https://www.facebook.com/Organizacion.Amar" class="btn">Más información</span></td>
             </tr>
             <tr>
               <td>2</td>
-              <td>William Taylor</td>
-              <td><span class="price">£38 / hr</span></td>
-              <td>9.5</td>
-              <td><a href="#" class="btn">Hire me</span></td>
+              <td>P.A.N.D.A</td>
+              <td> <img src="https://png.pngtree.com/element_origin_min_pic/16/11/30/cb791fefda08a641b6f47113f5ad13cb.jpg" alt=""></td>
+              <td><span class="price">adopcionespanda@gmail.com</span></td>
+              <td><a href="https://www.facebook.com/ProteccionAnimalyDefensaAmbiental?sk=wall" class="btn">Más información</span></td>
             </tr>
             <tr>
               <td>3</td>
-              <td>George Wilson</td>
-              <td><span class="price">£35 / hr</span></td>
-              <td>9.2</td>
-              <td><a href="#" class="btn">Hire me</span></td>
+              <td>Beatriz Esteriliza Tu Mascota:</td>
+              <td> <img src="https://png.pngtree.com/element_origin_min_pic/16/11/30/cb791fefda08a641b6f47113f5ad13cb.jpg" alt=""></td>
+              <td><span class="price">bety_bucles@hotmail.com</span></td>
+              <td><a href="https://www.facebook.com/EsterilizaTuMascota" class="btn">Más información</span></td>
             </tr>
             <tr>
               <td>4</td>
-              <td>Ellen Walker</td>
-              <td><span class="price">£39 / hr</span></td>
-              <td>9.1</td>
-              <td><a href="#" class="btn">Hire me</span></td>
+              <td>S.O.S Animal</td>
+              <td> <img src="https://png.pngtree.com/element_origin_min_pic/16/11/30/cb791fefda08a641b6f47113f5ad13cb.jpg" alt=""></td>
+              <td><span class="price">sosanimal1@hotmail.com</span></td>
+              <td><a href="https://www.facebook.com/pages/SOS-Animal/129574867092134" class="btn">Más información</span></td>
             </tr>
             <tr>
               <td>5</td>
-              <td>Emma Hall</td>
-              <td><span class="price">£35 / hr</span></td>
-              <td>9.0</td>
-              <td><a href="#" class="btn">Hire me</span></td>
+              <td>Mis Patitas</td>
+              <td> <img src="https://png.pngtree.com/element_origin_min_pic/16/11/30/cb791fefda08a641b6f47113f5ad13cb.jpg" alt=""></td>
+              <td><span class="price">mis.patitas.peru@gmail.com</span></td>
+              <td><a href="https://www.facebook.com/pages/Mis-Patitas/150843181622165" class="btn">Más información</span></td>
             </tr>
+           
+           
           </tbody>
         </table>
       </div>

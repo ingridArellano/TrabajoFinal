@@ -19,7 +19,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.php">AdoptMe</a></li>
+                    <li><a href="principal.php">AdoptMe</a></li>
                     <li><a href="adoptar.php">Adoptar</a></li>
                     <li><a href="doyenadopcion.php">Doy en Adopción</a></li>
                     <li><a href="campañas.php">Campaña</a></li>

@@ -4,6 +4,11 @@
     margin: 30px auto;
     background-color: rgb(233, 207, 173);
    }
+   img{
+       width: 70px;
+       height: 80px;
+       text-align: center;
+ }
 .responsiveTbl table {
     text-align: center;
     width: 100%;
