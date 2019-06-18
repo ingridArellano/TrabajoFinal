@@ -36,7 +36,7 @@
 
         <h2>Ficha de postulación a adopción</h2>
 
-        <input type="hidden" name="idMascota" value="<?php echo $idMascota ?>" >
+        <input type="hidden" name="id_masc" value="<?php echo $idMascota ?>" >
         
         <input class ="inputt" type="text" name="nombre" placeholder="Nombres">
         <input class ="inputt" type="text" name="apellido" placeholder="Apellidos">
@@ -114,12 +114,10 @@
         
         <input type="checkbox" id="tos" name="tos" value="tos" checked>
         <label class="label2" for="tos">Deseo recibir información de AdoptMe en mi correo.</label>
-        <input type="hidden" name="id_masc" value="<?php echo $id ?>">
 
         <button type="submit" class="inputt">POSTULAR</button>
     
     </form>
-
     
 </body>
 </html>
