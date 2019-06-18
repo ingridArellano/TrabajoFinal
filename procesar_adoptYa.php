@@ -16,7 +16,7 @@
 
 <?php
 # Paso 1: Leer datos de $_POST
-$idMascota=$_POST['idMascota'];
+$id_mascota=$_POST['id_masc'];
 $nombre=$_POST['nombre'];
 $apellido=$_POST['apellido'];
 $direccion=$_POST['direccion'];
@@ -34,7 +34,7 @@ $centroET=$_POST['centroET'];
 $pdo = new PDO("mysql:host=localhost;dbname=adoptme;charset=utf8","root",""); 
 
 # Paso 3: Construir comando:
-$sql = "INSERT INTO postulante values (NULL, 'idMascota','$nombre', '$apellido','$direccion','$distrito','$celular',
+$sql = "INSERT INTO postulante values (NULL, '$id_mascota','$nombre', '$apellido','$direccion','$distrito','$celular',
          '$telefono','$fechaNacimiento','$dni','$correo','$estadoCivil', '$ocupacion', '$centroET')" ;
 
 # Paso 4: Ejecutar comando
@@ -60,7 +60,7 @@ $pdo->query($sql);
     </style>
 </head>
 <body>
-    <?php echo $_POST["idMascota"] ?>
+    <?php echo $_POST["id_masc"] ?>
     <p>Estimado <?php echo $_POST["nombre"] ?> <?php echo $_POST["apellido"] ?> hemos recibido su ficha de postulación a adopción. </p>
     <p>Nos comunicaremos con usted mediante su correo: <?php echo $_POST["correo"] ?> </p>
     <p>Gracias por postular. </p>
