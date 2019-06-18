@@ -22,6 +22,7 @@
         <p style="color:red"> Faltan campos : llénelos</p>
     <?php } ?>
 
+    <br><br><br><br><br><br>
     <div>
         <img src="imagenes/contacto.png" alt="">
     </div>

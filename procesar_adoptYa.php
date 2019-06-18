@@ -74,41 +74,44 @@ $pdo->query($sql);
     <p>Nos comunicaremos con usted mediante su correo: <?php echo $_POST["correo"] ?> </p>
     <p>Gracias por postular. </p>
 
-    <div class="seccion_abajo">
+    
+    <div class="cuadrito">
+       
+        <div class="seccion_abajo">
             <table class="tablita">
+            <div class="name"><?php echo $fila["nombre_masc"] ?>
+            </div>
+        
+            <tr>
+                <th>Sexo</th>
+                <th>Tamaño</th>
+                <th>Peso</th>
+                <th>Edad</th>
+                <th>Nivel de actividad</th>
+            </tr>
 
-                <div class="name"><?php echo $fila["nombre_masc"] ?>
-                </div>
+            <tr>
+                <td>
+                <?php echo $fila["sexo_masc"] ?>
+                </td>
+                <td>
+                <?php echo $fila["tamaño_masc"] ?>
+                </td>
+                <td>
+                <?php echo $fila["peso_masc"] ?>
+                </td>
+                <td>
+                <?php echo $fila["edad_masc"] ?>
+                <td>
+                <?php echo $fila["nivel_act"] ?>
+                </td>
             
-                <tr>
-                    <th>Sexo</th>
-                    <th>Tamaño</th>
-                    <th>Peso</th>
-                    <th>Edad</th>
-                    <th>Nivel de actividad</th>
-                </tr>
+            </tr>
+            </table>                
+        </div>
 
-                <tr>
-                    <td>
-                    <?php echo $fila["sexo_masc"] ?>
-                    </td>
-                    <td>
-                    <?php echo $fila["tamaño_masc"] ?>
-                    </td>
-                    <td>
-                    <?php echo $fila["peso_masc"] ?>
-                    </td>
-                    <td>
-                    <?php echo $fila["edad_masc"] ?>
-                    <td>
-                    <?php echo $fila["nivel_act"] ?>
-                    </td>
-                
-                </tr>
-                
-            </table>
-                
     </div>
+
 
 </body>
 </html>
