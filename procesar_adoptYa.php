@@ -1,4 +1,3 @@
-
 <?php  
     # Validar que el usuario venga a través de un POST
     if($_SERVER["REQUEST_METHOD"] != "POST") {

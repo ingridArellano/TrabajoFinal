@@ -116,9 +116,7 @@
         <label class="label2" for="tos">Deseo recibir información de AdoptMe en mi correo.</label>
         <input type="hidden" name="id_masc" value="<?php echo $id ?>">
 
-        <button type="submit" class="inputt">POSTULAR
-
-        </button>
+        <button type="submit" class="inputt">POSTULAR</button>
     
     </form>
 
