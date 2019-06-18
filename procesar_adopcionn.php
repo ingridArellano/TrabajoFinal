@@ -1,13 +1,3 @@
-
-<?php
-
-if($_POST["nombre_masc"] == "" || $_POST["sexo_masc"] == ""||$_POST["tamaño_masc"] == ""||$_POST["peso_masc"] == "" 
-        ||$_POST["edad_masc"] == ""||$_POST["nivel_act"] == ""||$_POST["espacio_req"] == ""||$_POST["tiempo_solo"] == "") {
-        header("Location: doyenadopcion.php?error=campos");
-        exit;
-    }
-?>
-
 <?php
 # Paso 1: Leer datos de $_POST
 $nombres = $_POST['nombres'];

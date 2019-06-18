@@ -19,11 +19,7 @@
 
         <p>¿Tienes una mascota y quieres conseguirle un hogar?<br>
             Déjanos tus datos y nos comunicaremos contigo..</p>
-
-            <?php if(isset($_GET["error"]) && $_GET["error"] == "campos") { ?>
-        <p style="color:red;font-size: 24px;text-align: center;font-weight: bold"> Faltan campos : Llénelos</p>
-    <?php } ?>
-
+            
     <form class="datos" action="procesar_adopcionn.php" method="post">
                 <h2 class="doy">REGISTRO DEL DUEÑO</h2>
                 <div class="hola">
