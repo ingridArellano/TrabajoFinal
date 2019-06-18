@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.7.0
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-06-2019 a las 20:30:01
--- Versión del servidor: 10.1.36-MariaDB
--- Versión de PHP: 7.2.11
+-- Tiempo de generación: 18-06-2019 a las 22:37:54
+-- Versión del servidor: 10.1.25-MariaDB
+-- Versión de PHP: 7.1.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -21,6 +21,30 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `adoptme`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `cliente`
+--
+
+CREATE TABLE `cliente` (
+  `id` int(11) NOT NULL,
+  `nombres` varchar(50) NOT NULL,
+  `apellidos` varchar(70) NOT NULL,
+  `correo` varchar(50) NOT NULL,
+  `sexo` char(10) NOT NULL,
+  `fechadenacimiento` date NOT NULL,
+  `distrito` varchar(30) NOT NULL,
+  `celular` char(9) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `cliente`
+--
+
+INSERT INTO `cliente` (`id`, `nombres`, `apellidos`, `correo`, `sexo`, `fechadenacimiento`, `distrito`, `celular`) VALUES
+(1, 'fghfghfgh', 'hjgjvhjg', 'fghfghg@d.m', 'F', '1999-10-13', 'La Molina', '789456123');
 
 -- --------------------------------------------------------
 
@@ -70,7 +94,8 @@ CREATE TABLE `mascotas` (
 INSERT INTO `mascotas` (`id_masc`, `nombre_masc`, `sexo_masc`, `tamaño_masc`, `peso_masc`, `edad_masc`, `nivel_act`, `espacio_req`, `tiempo_solo`) VALUES
 (1, 'momo', 'Macho', 'grande', '30', 3, '1', 'grande', 0),
 (2, 'MOMO', 'Macho', 'GRANDE', '30', 3, '1', 'GRANDE', 0),
-(3, 'AISHA', 'Hembra', 'PEQUEÑO', '20', 2, '1', 'PEQUEÑO', 0);
+(3, 'AISHA', 'Hembra', 'PEQUEÑO', '20', 2, '1', 'PEQUEÑO', 0),
+(4, 'hoa', 'M', 'mediano', '1', 6, 'mediamo', 'meido', 0);
 
 -- --------------------------------------------------------
 
@@ -131,6 +156,12 @@ INSERT INTO `usuarios` (`id_usuario`, `usuario`, `contraseña`) VALUES
 --
 
 --
+-- Indices de la tabla `cliente`
+--
+ALTER TABLE `cliente`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `contacto`
 --
 ALTER TABLE `contacto`
@@ -159,29 +190,30 @@ ALTER TABLE `usuarios`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `cliente`
+--
+ALTER TABLE `cliente`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
 -- AUTO_INCREMENT de la tabla `contacto`
 --
 ALTER TABLE `contacto`
   MODIFY `idContacto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
 --
 -- AUTO_INCREMENT de la tabla `mascotas`
 --
 ALTER TABLE `mascotas`
-  MODIFY `id_masc` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
+  MODIFY `id_masc` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT de la tabla `postulante`
 --
 ALTER TABLE `postulante`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-COMMIT;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
