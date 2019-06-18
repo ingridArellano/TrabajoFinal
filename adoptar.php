@@ -52,6 +52,7 @@ $resMascota=$pdo->query($mascotas);
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" a href="hojaAdoptar.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 
 </head>
 <body>
@@ -91,13 +92,14 @@ $resMascota=$pdo->query($mascotas);
     </form>
 
 </div>
+<br>
 
 <div class="conte_padre">
     <?php 
     while ($registroMascota = $resMascota->fetch()){
     ?>
 
-        <div class="hijo a">
+        <div class="hijo">
 
         <img class="imagen-cuadro" src="http://cdn.lavozdesanjusto.com.ar/Imagenes/1200Image1534794eb6f149ba9ed94d6fa86fd45b.jpg" alt="">
         <p><?php echo $registroMascota["nombre_masc"] ?></p>
@@ -109,6 +111,7 @@ $resMascota=$pdo->query($mascotas);
     }
     ?>
  </div>
+ <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
 <?php include 'pie.php'?>
 </body>
 </html>

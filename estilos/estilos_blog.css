@@ -87,8 +87,8 @@
   .bigBox .box:before{
     content: ''; 
     position: absolute;
-    top:150px;
-    right: 40px;
+    top:50px;
+    right: 30px;
     width:80px;
     height:80px;
     background: url(https://pngriver.com/wp-content/uploads/2018/04/Download-Closing-Quotation-Mark-Symbol-Png-Image-79193-For-Designing-Projects.png);
@@ -154,6 +154,8 @@
     flex: 100%;
     max-width: 80%;
   }
+  
+
   }
   
   @media screen and (max-width:600px) {

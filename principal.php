@@ -128,7 +128,7 @@
     </div>
 
     <div class="ya">
-        <a href="adopta.php"><input class="botonya" type="button" value="¡ADOPTA UNA MASCOTA AQUÍ!"></a>
+        <a href="adoptar.php"><input class="botonya" type="button" value="¡ADOPTA UNA MASCOTA AQUÍ!"></a>
     </div>
     
     <?php include 'pie.php'; ?>

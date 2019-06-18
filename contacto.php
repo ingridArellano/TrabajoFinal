@@ -16,11 +16,13 @@
     </style>
 </head>
 <body>
+<?php include 'cabecera.php'?>
 
     <?php if(isset($_GET["error"]) && $_GET["error"] == "faltancampos") { ?>
         <p style="color:red"> Faltan campos : llénelos</p>
     <?php } ?>
 
+    <br><br><br><br><br><br>
     <div>
         <img src="imagenes/contacto.png" alt="">
     </div>
@@ -61,6 +63,6 @@
         <button type="submit" class="inputt">Enviar</button>
 
     </form>
-
+<?php include 'pie.php'?>
 </body>
 </html>

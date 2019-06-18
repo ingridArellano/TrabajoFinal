@@ -1,3 +1,14 @@
+<?php
+
+ $id=$_GET["id"];
+
+ $pdo=new PDO ("mysql:host=localhost;dbname=AdoptMe;charset=utf8","root","");
+ $resultado=$pdo->query("SELECT * FROM mascotas WHERE id_masc='$id' ");
+ $fila=$resultado->fetch();
+ 
+ ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -103,6 +114,8 @@
         <label class="label2" for="tos">Deseo recibir información de AdoptMe en mi correo.</label>
 
         <button type="submit" class="inputt">Postular</button>
+        
+        <a class="prueba" href="procesar_adoptYa.php?id=<?php echo $fila["id_masc"]?>">Conoceme</a>
     
     </form>
     
