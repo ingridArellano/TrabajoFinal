@@ -18,7 +18,7 @@
         </div>
 
         <p>¿Tienes una mascota y quieres conseguirle un hogar?<br>
-            Déjanos tus datos y nos comunicaremos contigo.</p>
+            Déjanos tus datos y nos comunicaremos contigo..</p>
 
     <form class="datos" action="procesar_adopcionn.php" method="post">
                 <h2 class="doy">REGISTRO DEL DUEÑO</h2>
