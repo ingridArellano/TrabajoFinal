@@ -7,7 +7,7 @@
     position: fixed;
     z-index: 1000;
     top: 0;
-    max-width: 1348px;
+    max-width: 100%;
 }
 
 #boton {
