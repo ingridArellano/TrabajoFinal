@@ -24,15 +24,15 @@
                 <h2 class="doy">REGISTRO DEL DUEÑO</h2>
 
                             
-        <?php if(isset($_GET["error"]) && $_GET["error"] == "campos1") { ?>
-        <p style="color:black"> Faltan campos en el usuario : Llénelos</p>
-        <?php } ?>
+                <?php if(isset($_GET["error"]) && $_GET["error"] == "campos1") { ?>
+        <p style="color:black"> Faltan campos : llénelos</p>
+    <?php } ?>
+    <?php if(isset($_GET["errore"]) && $_GET["errore"] == "campos2") { ?>
+        <p style="color:black"> Faltan campos : llénelos</p>
+    <?php } ?>
 
-        
-        <?php if(isset($_GET["error"]) && $_GET["error"] == "campos2") { ?>
-                <p style="color:black"> Faltan campos en la mascota: Llénelos</p>
-                <?php } ?>
-
+    <?php if(isset($_GET["error"]) && $_GET["error"] == "campos1") { ?> <p style="color:black"> Faltan campos en el usuario : Llénelos</p>; <?php } else{?> <p style="color:black"> Faltan campos en la mascota : Llénelos</p>; <?php } ?>
+    
                 <div class="hola">
                     <label for="nombres">Nombres:</label>
                     <input type="text" name="nombres" placeholder="Ingresa tu(s) nombre(s)">

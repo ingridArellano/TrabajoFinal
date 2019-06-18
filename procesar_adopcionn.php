@@ -23,7 +23,7 @@ if ($_POST["nombres"] == "" || $_POST["apellidos"] == "" || $_POST["correo"] == 
 
 #validar que los campos estan escritos
 if ($_POST["nombre_masc"] == "" || $_POST["sexo_masc"] == "" || $_POST["edad_masc"] == "" || $_POST["descripcion"] == "" || $_POST["raza_masc"] == "" || $_POST["tipo_masc"] == "" || $_POST["vacunas"] == "" || $_POST["estado"] == "" || $_POST["espacio_req"] == "" || $_POST["nivel_act"] == "" || $_POST["peso_masc"] == "" || $_POST["tamaño_masc"] == "" || $_POST["tiempo_solo"] == "") {
-    header("Location: doyenadopcion.php?error=campos2");
+    header("Location: doyenadopcion.php?errore=campos2");
     exit;
 }
 ?>
