@@ -22,17 +22,6 @@
 
     <form class="datos" action="procesar_adopcionn.php" method="post">
                 <h2 class="doy">REGISTRO DEL DUEÑO</h2>
-
-                            
-                <?php if(isset($_GET["error"]) && $_GET["error"] == "campos1") { ?>
-        <p style="color:black"> Faltan campos : llénelos</p>
-    <?php } ?>
-    <?php if(isset($_GET["errore"]) && $_GET["errore"] == "campos2") { ?>
-        <p style="color:black"> Faltan campos : llénelos</p>
-    <?php } ?>
-
-    <?php if(isset($_GET["error"]) && $_GET["error"] == "campos1") { ?> <p style="color:black"> Faltan campos en el usuario : Llénelos</p>; <?php } else{?> <p style="color:black"> Faltan campos en la mascota : Llénelos</p>; <?php } ?>
-    
                 <div class="hola">
                     <label for="nombres">Nombres:</label>
                     <input type="text" name="nombres" placeholder="Ingresa tu(s) nombre(s)">
@@ -124,55 +113,20 @@
                 <div class="se">
                     <label for="nombre_masc">Nombre Mascota:</label>
                     <input type="text"  name="nombre_masc" placeholder="Ingresa el nombre de tu mascota">
-                </div>
-
-                <div class="se1">
-                    <label for="tip_masc">Especie de la Mascota:</label>
-                    <input type="text" name="tipo_masc" placeholder="Ingresa el tipo de tu mascota">
-                </div>
-
-                <div class="se2">
-                    <label for="raza_masc">Raza de la Mascota:</label>
-                    <input type="text" name="raza_masc" placeholder="Ingresa la raza de tu mascota">
-                </div>
+                </div>                 
 
                 <div class="se3">
                     <label for="sexo_masc">Género de la Mascota:</label>
                     <select name="sexo_masc" >
                         <option value="" selected>Indicar género de la mascota</option>
-                        <option value="M">Macho</option>
-                        <option value="H">Hembra</option>
+                        <option value="M">macho</option>
+                        <option value="H">hembra</option>
                     </select>
                 </div>
 
                 <div class="se4">
                     <label for="edad_masc">Edad de tu mascota en <strong>MESES</strong>:</label>
                     <input type="text" name="edad_masc" placeholder="Ingresa la edad de tu mascota">
-                </div>
-
-                <div class="se5">
-                    <label for="descripcion">Descripción: </label><BR>
-                    <textarea name="descripcion"></textarea>
-                </div>
-
-                <div class="se6">
-                    <label for="vacunas">¿Tiene todas sus vacunas?</label>
-                    <select name="vacunas" >
-                        <option value="" selected>Ingrese si su mascota tiene sus respectivas vacunas</option>
-                        <option value="Si">SI</option>
-                        <option value="No">NO</option>
-                        <option value="Tiene pero no completas">TIENE PERO NO COMPLETAS</option>
-                    </select>
-                </div>
-
-                <div class="se7">
-                    <label for="estado">Estado:</label>
-                    <select name="estado" >
-                        <option value="" selected>Indicar Estado de la mascota</option>
-                        <option value="Recien Encontrado">Recien Encontrado</option>
-                        <option value="Para Adoptar">Para Adoptar</option>
-                        <option value="Estado Reservado">Estado Reservado</option>
-                    </select>
                 </div>
 
                 <div class="se8">
