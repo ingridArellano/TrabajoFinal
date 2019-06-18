@@ -16,7 +16,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse laborum, officia delectus corrupti modi natus?</p>
       </header>
 
-      <main>
+      <main class="mainn">
         <div class="singleBlog">
           <img src="thum1.jpg" alt="">
           <div class="blogContent">
