@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <?php include 'cabecera.php'; ?>
+    <?php include 'cabecera.php' ?>
 
     <div class="slider">
         <ul>
