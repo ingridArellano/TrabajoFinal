@@ -8,6 +8,11 @@
     z-index: 1000;
     top: 0;
     max-width: 100%;
+    font-family: 'Pattaya', sans-serif;
+}
+
+header {
+    margin: 0 0 105px 0;
 }
 
 #boton {
@@ -16,7 +21,7 @@
     height: 30px;
 }
 
-.hola img {
+.holi img {
     height: 100px;
 }
 
@@ -66,6 +71,7 @@ nav li:hover {
     position: relative;
     display: flex;
     justify-content: space-between;
+    bottom: -8px;
 }
 
 .foo img {
@@ -99,6 +105,7 @@ nav li:hover {
     text-decoration: none;
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;
+    font-family: 'Pattaya', sans-serif;
 }
 
 .main li:hover {
@@ -112,10 +119,11 @@ nav li:hover {
     }
     nav {
         position: fixed;
-        background: rgb(80, 80, 80);
+        background: rgb(114, 112, 112);
         width: 40%;
         margin: 17% -42%;
         transition: all 0.5s;
+        height: 372px;
     }
     nav ul {
         flex-direction: column;
@@ -129,6 +137,7 @@ nav li:hover {
     }
     header {
         top: 0;
+        z-index: 1000;
     }
     .contenedor {
         max-width: 716px;
