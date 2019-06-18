@@ -30,7 +30,7 @@
           <div class="blogContent">
             <h3>A Chair of Million <span>Photography</span></h3>
             <p>By <a href="#">Jhon Doe</a> | <a href="#">Nov 21, 2018</a></p>
-            <a href="#" class="btn">Read More</a>
+            <a href="entry.php" class="btn">Read More</a>
           </div>
         </div>
         <div class="singleBlog">
