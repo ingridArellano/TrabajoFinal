@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="estilo-header-footer.css">
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Pattaya&display=swap');
+</style>
     <title>Document</title>
 </head>
 
@@ -14,7 +17,7 @@
         <div class="contenedor">
             <input type="checkbox" id="boton">
             <label  for="boton"><img src="main.png"></label>
-            <div class="hola">
+            <div class="holi">
                 <img src="https://sites.google.com/site/webquestanimalesdom/_/rsrc/1472873888662/home/10780695-ilustracion-de-tres-animales-domesticos%20png.png">
             </div>
             <nav>
