@@ -8,10 +8,10 @@
   <link rel="stylesheet" href="estilo_campañas.css">
 </head>
 <body>
-
+<?php include 'cabecera.php'?>
   <section>
     <div class="container">
-      <header>
+      <header class="headercito">
         <h1>Preguntas Frecuentes</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse laborum, officia delectus corrupti modi natus?</p>
       </header>
@@ -52,6 +52,6 @@
       </main>
     </div>
   </section>
-
+  <?php include 'pie.php'?>
 </body>
 </html>
