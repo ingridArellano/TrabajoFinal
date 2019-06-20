@@ -26,6 +26,7 @@
 				<li><a href="campañas.php">Campaña</a></li>
 				<li><a href="blog.php">Blog</a></li>
 				<li><a href="contacto.php">Contacto</a></li>
+				<li><a href="perfil_usuario.php">Perfil</a></li>
 			</ul>
 		</div>
 

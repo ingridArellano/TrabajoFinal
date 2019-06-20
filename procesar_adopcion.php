@@ -15,10 +15,9 @@ if (
 ?>
 
 <?php
-$dir = "img/";
 $nombre_archivo = $_FILES['imagen']['name'];
 
-if (!move_uploaded_file($_FILES['imagen']['tmp_name'], $dir . $nombre_archivo)) {
+if (!move_uploaded_file($_FILES['imagen']['tmp_name'], $nombre_archivo)) {
     echo "Error en la subida de archivos";
     exit;
 }
@@ -37,7 +36,7 @@ $estado = $_POST['estado'];
 $tipo_masc = $_POST['tipo_masc'];
 
 $pdo = new PDO("mysql:host=localhost;dbname=adoptme;charset=utf8", "root", "");
-echo $sql = "INSERT INTO mascotas values (NULL, '$nombre_masc', '$sexo_masc', '$tamaño_masc','$peso_masc', '$edad_masc', '$nivel_act', '$espacio_req', '$tiempo_solo','$espacio', '$tipo_masc', '$dir.$nombre_archivo')";
+echo $sql = "INSERT INTO mascotas values (NULL, '$nombre_masc', '$sexo_masc', '$tamaño_masc','$peso_masc', '$edad_masc', '$nivel_act', '$espacio_req', '$tiempo_solo','$estado', '$tipo_masc', '$nombre_archivo')";
 $pdo->query($sql);
 ?>
 
