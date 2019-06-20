@@ -20,7 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="estilos/hojaContacto.css">
+    <link rel="stylesheet" href="estilos/hojaPerfil_usuario.css">
     <style>
         .padre{
             border: 2px solid purple;
@@ -40,6 +40,19 @@
             flex-grow: 1 ;
             flex-shrink: 1;
         }
+        span.blue {
+            background: #5178D0;
+            border-radius: 1em;
+            -moz-border-radius: 1em;
+            -webkit-border-radius: 1em;
+            color: #ffffff;
+            display: inline-block;
+            font-weight: bold;
+            line-height: 1.6em;
+            margin-right: 15px;
+            text-align: center;
+            width: 1em; 
+        }
     </style>
 </head>
 <body>
@@ -58,7 +71,9 @@
                 <p style="color:black;font-size: 24px;text-align: center;font-weight: bold">Hola 
                 <?php echo $_SESSION["usuario"] ?> <br> <br> 
                 Bienvenido a su perfil.</p>
-                <p>Llevas hasta la fecha:<?php echo $row["numero"] ?> adoptadas</p>
+                <p style="color:black;font-size: 24px;text-align: center;font-weight: bold">Llevas hasta la fecha:
+                <p style="text-align: center;"><span class="blue"><?php echo $row["numero"] ?></span></p>
+                <p style="color:black;font-size: 24px;text-align: center;font-weight: bold">adopciones</p>
                 <footer><a href="logout.php">Cerrar sesión</a></footer>
 
             </div>
