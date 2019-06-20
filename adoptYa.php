@@ -23,14 +23,26 @@
 
     <form action="procesar_adoptYa.php" method="post">
 
-        <h2>Ficha de postulación a adopción</h2>
+        <h2>Registro</h2>
 
-             
-        <input class ="inputt" type="text" name="nombre" placeholder="Nombres">
-        <input class ="inputt" type="text" name="apellido" placeholder="Apellidos">
-        
-        <input class ="inputt" type="text" name="direccion" placeholder="Dirección">
-        
+        <label class="labell">1. Datos para el inicio de sesión</label>
+        <br>
+        <br>
+        <label class="label2">Usuario:</label>
+        <input class="inputt" type="text" name="usuario" >
+        <label class="label2">Contraseña</label>
+        <input class="inputt" type="password" name="contraseña" >
+
+        <label class="labell">2. Datos personales </label>
+        <br>
+        <br>
+        <label class="label2">Nombres:</label>             
+        <input class ="inputt" type="text" name="nombre" >
+        <label class="label2">Apellidos:</label>
+        <input class ="inputt" type="text" name="apellido" >
+        <label class="label2">Dirección:</label>
+        <input class ="inputt" type="text" name="direccion" >
+        <label class="label2">Distrito:</label>
         <select class ="inputt" name="distrito">
                             <option value="">Distrito</option>
                             <option value="1">Ancón</option>
@@ -79,15 +91,15 @@
                             <option value="44">Villa María del Triunfo</option>
                                                         
         </select>
-        
-        <input class ="inputt" type="number" maxlength="9" name="celular" placeholder="Teléfono móvil">
-        <input class ="inputt" type="number" maxlength="9" name="telefono" placeholder="Teléfono fijo">
-        
-        <input class ="inputt" type="date" name="fechaNacimiento" placeholder="Fecha de Nacimiento">
-        <input class ="inputt" type="number" maxlength="8" name="dni" placeholder="DNI">
-
-        <input class ="inputt" type="email" name="correo" placeholder="Correo Electrónico">
-        
+        <label class="label2">Celular:</label>
+        <input class ="inputt" type="number" maxlength="9" name="celular">
+        <label class="label2">Fecha de nacimiento:</label>
+        <input class ="inputt" type="date" name="fechaNacimiento">
+        <label class="label2">DNI:</label>
+        <input class ="inputt" type="number" maxlength="8" name="dni">
+        <label class="label2">Correo electrónico:</label>
+        <input class ="inputt" type="email" name="correo">
+        <label class="label2">Estado civil:</label>
         <select class ="inputt" name="estadoCivil">
                 <option value="">Estado Civil</option>
                 <option value="soltero">Soltero</option>
@@ -95,10 +107,10 @@
                 <option value="viudo">Viudo</option>
                 <option value="divorciado">Divorciado</option>
         </select>
-
-        <input class ="inputt" type="text" name="ocupacion" placeholder="Ocupación">
-        
-        <input class ="inputt" type="text" name="centroET" placeholder="Centro de trabajo/estudio">
+        <label class="label2">Ocupación:</label>
+        <input class ="inputt" type="text" name="ocupacion">
+        <label class="label2">Centro de trabajo/estudio:</label>
+        <input class ="inputt" type="text" name="centroET">
         
         <input type="checkbox" id="tos" name="tos" value="tos" checked>
         <label class="label2" for="tos">Deseo recibir información de AdoptMe en mi correo.</label>

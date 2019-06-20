@@ -14,7 +14,7 @@ else{
         
         #Validar que los campos estén escritos
         if($_POST["nombre"] == "" ||$_POST["apellido"] == ""||$_POST["direccion"] == ""||$_POST["distrito"] == "" 
-            ||$_POST["celular"] == ""||$_POST["telefono"] == ""||$_POST["fechaNacimiento"] == ""||$_POST["dni"] == ""
+            ||$_POST["celular"] == ""||$_POST["fechaNacimiento"] == ""||$_POST["dni"] == ""
             ||$_POST["correo"] == ""||$_POST["estadoCivil"] == ""||$_POST["ocupacion"] == ""||$_POST["centroET"] == ""
             ||$_POST["tos"] == "") {
             header("Location: adoptYa.php?error=faltancampos");
@@ -28,7 +28,6 @@ else{
     $direccion=$_POST['direccion'];
     $distrito=$_POST['distrito'];
     $celular=$_POST['celular'];
-    $telefono=$_POST['telefono'];
     $fechaNacimiento=$_POST['fechaNacimiento'];
     $dni=$_POST['dni'];
     $correo=$_POST['correo'];
@@ -40,8 +39,8 @@ else{
     $pdo = new PDO("mysql:host=localhost;dbname=adoptme;charset=utf8","root",""); 
 
     # Paso 3: Construir comando:
-    $sql = "INSERT INTO postulante values (NULL,'$nombre', '$apellido','$direccion','$distrito','$celular',
-            '$telefono','$fechaNacimiento','$dni','$correo','$estadoCivil', '$ocupacion', '$centroET')" ;
+    $sql = "INSERT INTO postulante values (NULL,'$nombre', '$apellido','$direccion','$distrito','$celular','$fechaNacimiento','$dni'
+                                            ,'$correo','$estadoCivil', '$ocupacion', '$centroET')" ;
 
     # Paso 4: Ejecutar comando
     $pdo->query($sql);
