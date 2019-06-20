@@ -22,7 +22,7 @@
         <p style="color:red"> Faltan campos : llénelos</p>
     <?php } ?>
 
-    <br><br><br><br><br><br>
+    
     <div>
         <img src="imagenes/contacto.png" alt="">
     </div>
@@ -45,7 +45,9 @@
         <textarea name="mensaje"></textarea>
 
         <input type="checkbox" id="tos" name="tos" value="tos">
-        <label class="label2" for="tos">En cumplimiento de la ley de protección de Datos Personales, 
+        <label style="margin: .5em 0 0 0; text-align: justify; color: black;
+                        font-size: 15px; font-weight: bold;" for="tos">
+                        En cumplimiento de la ley de protección de Datos Personales, 
                         por medio del presente documento solicitamos su autorización 
                         para que AdoptMe recolecte, almacene y use sus datos personales 
                         registrados en el presente formulario. Sus datos personales se 
