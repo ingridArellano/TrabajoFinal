@@ -83,7 +83,6 @@ nav span:hover {
     display: flex;
     justify-content: space-between;
     bottom: -8px;
-    border: 10px solid black;
 }
 
 .foo img {
