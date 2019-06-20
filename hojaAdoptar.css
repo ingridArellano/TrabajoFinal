@@ -1,6 +1,5 @@
 body {
     background-color: green;
-    height: auto;
 }
 
 .conte_padre {
@@ -33,12 +32,12 @@ body {
     border: 2px solid skyblue;
     background: #fff;
     padding: 15px 10px;
+    height: 350px;
 }
 
 .btn {
     display: block;
     margin: 20px auto;
-    ;
     padding: 5px 10px;
 }
 
@@ -67,20 +66,6 @@ p {
     font-size: 16px;
     color: black;
     text-align: center;
-}
-
-.gotopbtn {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    background: #27ae60;
-    bottom: 40px;
-    right: 50px;
-    text-decoration: none;
-    text-align: center;
-    line-height: 50px;
-    color: white;
-    font-size: 22px;
 }
 
 @media screen and (max-width:1215px) {

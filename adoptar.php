@@ -100,12 +100,14 @@ $resMascota=$pdo->query($mascotas);
 
 <div class="conte_padre">
     <?php 
+
+    
     while ($registroMascota = $resMascota->fetch()){
     ?>
 
         <div class="hijo">
 
-        <img class="imagen-cuadro" <?php echo "<img src=\"$nombre_archivo\">" ?> alt="">
+        <img class="imagen-cuadro"  src="<?php echo $registroMascota["imagen"]?>">
         <p style="color:black">Nombre: <?php echo $registroMascota["nombre_masc"] ?></p>
         <p style="color:black">Tipo: <?php echo $registroMascota["tipo_masc"] ?></p>
         <p style="color:black">Estado: <?php echo $registroMascota["estado"] ?></p>
