@@ -1,14 +1,3 @@
-<?php
-
-    $idMascota=$_GET["id"];
-
-    $pdo=new PDO ("mysql:host=localhost;dbname=AdoptMe;charset=utf8","root","");
-    $resultado=$pdo->query("SELECT * FROM mascotas WHERE id_masc='$idMascota' ");
-    $fila=$resultado->fetch();
- 
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,8 +25,7 @@
 
         <h2>Ficha de postulación a adopción</h2>
 
-        <input type="hidden" name="id_masc" value="<?php echo $idMascota ?>" >
-        
+             
         <input class ="inputt" type="text" name="nombre" placeholder="Nombres">
         <input class ="inputt" type="text" name="apellido" placeholder="Apellidos">
         
@@ -114,10 +102,12 @@
         
         <input type="checkbox" id="tos" name="tos" value="tos" checked>
         <label class="label2" for="tos">Deseo recibir información de AdoptMe en mi correo.</label>
-
-        <button type="submit" class="inputt">POSTULAR</button>
-    
+        
+        <button type="submit" class="inputt">REGISTRAR</button>
+        
+        <p>¿Ya eres parte de nueva familia?</p><a href="login.php" class="btn">Inicia Sesión</a>
+        
     </form>
-    
+   
 </body>
 </html>

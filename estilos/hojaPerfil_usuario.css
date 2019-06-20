@@ -1,0 +1,60 @@
+form {
+    width: 500px;
+    margin: auto;
+    background: rgba(1, 1, 2, 0.4);
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+.labell {
+    color: #fff;
+    text-align: center;
+    
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.label2 {
+    margin: .5em 0 0 0;
+    text-align: justify;
+    color: black;
+    font-size: 20px;
+}
+
+.inputt, textarea {
+    width: 100%;
+    margin: 5px auto ;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+    border-radius: 8px;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+button {
+    background: crimson;
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    form{
+        width:100%;
+    }
+}

@@ -42,6 +42,7 @@ body{
     color:white;
     border-radius: 24px;
     transition:0.25s;
+        text-decoration: underline;
 }
 .login_conte input[type = "text"]:focus, .login_conte input[type = "password"]:focus {
     width:275px;

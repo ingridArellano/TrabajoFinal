@@ -1,3 +1,7 @@
+<?php 
+session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +17,7 @@
 </head>
 
 <body>
+
     <header>
         <div class="contenedor">
             <input type="checkbox" id="boton">
@@ -20,6 +25,7 @@
             <div class="holi">
                 <img src="https://sites.google.com/site/webquestanimalesdom/_/rsrc/1472873888662/home/10780695-ilustracion-de-tres-animales-domesticos%20png.png">
             </div>
+            
             <nav>
                 <ul>
                     <li><a href="principal.php">AdoptMe</a></li>
@@ -28,6 +34,18 @@
                     <li><a href="campañas.php">Campaña</a></li>
                     <li><a href="blog.php">Blog</a></li>
                     <li><a href="contacto.php">Contacto</a></li>
+                    <li><a href="perfil_usuario.php">Perfil</a></li>
+
+                <?php if(isset($_SESSION["usuario"])){
+                ?>
+                <li><?php echo $_SESSION["usuario"]?></a></li>/<a href="logout.php"><span>Logout</span></a></li>;
+                   <?php }
+                else {
+                ?><a href="login.php"><span>Login/Register</span></a></li>';
+                     <?php
+                }
+                ?>
+                
                 </ul>
             </nav>
         </div>

@@ -48,6 +48,7 @@ $pdo->query($sql1);
     <p> Estimado <?php echo $_POST["nombres"] ?>,
         hemos recibido su solicitud de su mascota: <?php echo $_POST["nombre_masc"] ?>. </p>
     <p> En breve, le enviaremos una respuesta a su correo: <?php echo $_POST["correo"] ?> </p>
+    
 
     <?php include 'pie.php'; ?>
 </body>

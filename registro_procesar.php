@@ -8,21 +8,16 @@ $password=$_POST["p"];
 
 $pdo=new PDO ("mysql:host=localhost;dbname=adoptme;charset=utf8","root","");
 
-$resultado=$pdo->query("SELECT * FROM postulante WHERE nombre='$usuario' and apellido= '$password'");
+$resultado=$pdo->query("SELECT * FROM usuarios WHERE usuario='$usuario' and contraseña= '$password'");
 $filas=$resultado->fetchAll();
-
-
-$result=$pdo->query("SELECT id FROM postulante WHERE nombre='$usuario' and apellido= '$password'");
-$fila=$result->fetch();
 
 if(count($filas) ==1) {
     #Usuario correcto
     #Guardar el resultado de la validacion SESSION
     session_start(); #Lee el session ID. eN CASO NO EXISTA LO CREA
     $_SESSION["usuario"]=$usuario;
-    $_SESSION["id_usuario"]=$fila["id"];
     #Redirigir al index.php
-    header("Location: adoptar.php");
+    header("Location: index.php");
 }
 else{
     #Usuario incorrecto

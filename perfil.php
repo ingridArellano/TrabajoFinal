@@ -1,4 +1,8 @@
 <link rel="stylesheet" href="estilos/hojaPerfil.css">
+<?php
+session_start(); #Esta funcion debe ser llamada antes de un output
+
+?>
 
 <?php
 
@@ -62,7 +66,16 @@
                 </td>
             </tr>
             </table>
-            <a class="btn" href="adoptYa.php?id=<?php echo $fila["id_masc"]?>">AdoptMe ya!</a>
+            
+            <?php if(isset($_SESSION["usuario"])){  ?>
+
+            <a class="btn" href="procesar_adoptYa.php?id=<?php echo $fila["id_masc"]?>">AdoptMe ya!</a>
+            <?php } else { ?>
+
+            <a class="btn" href="login.php">AdoptMe ya!</a>
+            <?php } ?>
+
+            
                 
         </div>
     </div>

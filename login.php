@@ -1,10 +1,7 @@
 <?php
 #Validacion
 session_start();
-if(isset($_SESSION["usuario"])){
-    header("Location: index.php");
-    exit;#ez
-}
+
 ?>
 
 <!DOCTYPE html>
@@ -18,29 +15,26 @@ if(isset($_SESSION["usuario"])){
 
 </head>
 <body>
+<?php    
+     if(isset($_GET["m"])){ ?>
+    <p style="color: red"> Datos incorrectos</p>
 
-<?php if(isset($_GET["m"])){ ?>
-<p style="color: red"> Datos incorrectos</p>
-
-<?php } ?>
+    <?php } ?>
 
 
-<form class="login_conte" action="login_procesar.php" method="post">
-<h2>AdoptMe: Inicio de sesión</h2>
-<div>
-   <input type="text" name="u" placeholder="Usuario"/>
-   </div>
-<div>
-    <input type="password" name="p" placeholder="Contraseña"/>
-   </div>
-<div>
-    <input type="submit" name="" value="Iniciar sesión"/>
+    <form class="login_conte" action="login_procesar.php" method="post">
+    <h2>AdoptMe: Inicio de sesión</h2>
+    <div>
+    <input type="text" name="u" placeholder="Usuario"/>
     </div>
-
-
-</form>
-
-
-
+    <div>
+        <input type="password" name="p" placeholder="Contraseña"/>
+    </div>
+    <div>
+        <input type="submit" name="" value="Iniciar sesión"/>
+        </div>
+    <p>No te haz registrado<a href="adoptYa.php"><span>Registrate</span></a></p>
+    </form>
+   
 </body>
 </html>
