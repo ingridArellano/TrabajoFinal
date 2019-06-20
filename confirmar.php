@@ -36,9 +36,11 @@ $pdo->query($sql);
 
  
  <body>
-    <p>Estimado hemos recibido su ficha de postulación a adopción. </p>
+   <div style="text-align: center;font-size:20px;background: salmon;">
+    <p>Estimado hemos recibido su ficha de adopción. </p>
     <p>Nos comunicaremos con usted mediante su correo: </p>
     <p>Gracias por postular. </p>
     <a href="principal.php">Volver a la página principal</a>
+   </div>
 </body>
 </html>
