@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-06-2019 a las 06:42:02
+-- Tiempo de generación: 20-06-2019 a las 06:56:05
 -- Versión del servidor: 10.1.36-MariaDB
 -- Versión de PHP: 7.2.11
 
@@ -91,7 +91,6 @@ CREATE TABLE `postulante` (
   `direccion` varchar(200) NOT NULL,
   `distrito` varchar(100) NOT NULL,
   `celular` char(9) NOT NULL,
-  `telefono` char(9) NOT NULL,
   `fechaNacimiento` date NOT NULL,
   `dni` char(8) NOT NULL,
   `correo` varchar(100) NOT NULL,
