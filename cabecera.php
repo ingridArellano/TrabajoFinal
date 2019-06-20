@@ -38,7 +38,7 @@ session_start();
 
                 <?php if(isset($_SESSION["usuario"])){
                 ?>
-                <li>Hola:<?php echo $_SESSION["usuario"]?></a></li>/<a href="logout.php"><span>Salir</span></a></li>
+                <li class="sesion">Hola :    "  <?php echo $_SESSION["usuario"]?>  "</a></li><a href="logout.php"><span>Salir</span></a></li>
                    <?php }
                 else {
                 ?><a href="login.php"><span>Iniciar Sesión</span></a></li>';

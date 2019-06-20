@@ -1,390 +1,217 @@
  .todo {
-    height: auto;
-    width: 100%;
-}
-
-.general {
-    background: url(http://vipmascotas.com/wp-content/uploads/2019/02/105.jpg) no-repeat center;
-    background-size: cover;
-    padding: 0;
-    height: auto;
-    width: 100%;
-    margin: 0 0 -10px;
-}
-
-.titulo h1 {
-    text-align: center;
-    color: rgb(24, 71, 4);
-    width: 95%;
-    margin: 0 29.5px 0;
-    font-size: 50px;
-}
-
-.general p {
-    font-size: 27px;
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    color: rgb(16, 14, 138);
-}
-
-.datos {
-    margin: auto;
-    overflow: hidden;
-    width: 95%;
-    height: auto;
-    padding: 0 10px;
-}
-
-.hola,
-.hola1,
-.hola2,
-.hola3,
-.hola4,
-.hola5,
-.hola6 {
-    display: block;
-    width: 46%;
-    box-sizing: border-box;
-    background: #111;
-    padding: 20px 40px;
-    color: #add;
-    transition: 0.5s;
-    outline: none;
-    border-radius: 20px;
-}
-
-.hola {
-    margin: 16px 0;
-}
-
-.hola1 {
-    margin: -129px 675px;
-}
-
-.hola2 {
-    margin: 146px 0;
-}
-
-.hola3 {
-    margin: -259px 675px;
-}
-
-.hola4 {
-    margin: 279px 0;
-}
-
-.hola5 {
-    margin: -395px 675px;
-}
-
-.hola6 {
-    margin: 419px 0;
-}
-
-.hola :focus,
-.hola1 :focus,
-.hola2 :focus,
-.hola3 :focus,
-.hola4 :focus,
-.hola5 :focus,
-.hola6 :focus {
-    box-shadow: 0 0 20px 8px #34495e;
-}
-
-.hola label,
-.hola1 label,
-.hola2 label,
-.hola3 label,
-.hola4 label,
-.hola5 label,
-.hola6 label {
-    margin: 10px;
-}
-
-.hola5 select,
-.hola3 select,
-.hola input,
-.hola1 input,
-.hola2 input,
-.hola4 input,
-.hola6 input {
-    margin: 10px;
-    padding: 5px;
-    width: 100%;
-}
-
-.se,
-.se3,
-.se4,
-.se8,
-.se9,
-.se10,
-.se11,
-.se12 {
-    display: block;
-    width: 46%;
-    box-sizing: border-box;
-    background: #111;
-    padding: 20px 40px;
-    color: #add;
-    transition: 0.5s;
-    outline: none;
-    border-radius: 20px;
-}
-
-.se {
-    margin: 16px 0;
-}
-
-
-.se3 {
-    margin: -123px 675px;
-}
-
-.se4 {
-    margin: 139px 0;
-}
-
-.se8 {
-    margin: 150px 0;
-}
-
-.se9 {
-    margin: -127px 0;
-}
-
-.se10 {
-    margin: 1px 675px;
-}
-
-.se11 {
-    margin: 28px 0;
-}
-
-.se12 {
-    margin: -138px 675px;
-}
-
-.se :focus,
-.se3 :focus,
-.se4 :focus,
-.se8 :focus,
-.se9 :focus,
-.se10 :focus,
-.se11 :focus,
-.se12 :focus {
-    box-shadow: 0 0 20px 8px #34495e;
-}
-
-.se5 textarea {
-    resize: none;
-    width: 100%;
-    height: 120px;
-    margin: 10px;
-}
-
-.se label,
-.se3 label,
-.se4 label,
-.se8 label,
-.se9 label,
-.se10 label,
-.se11 label,
-.se12 label {
-    margin: 10px;
-}
-
-.se3 select,
-.se input,
-.se4 input,
-.se8 input,
-.se9 input,
-.se10 input,
-.se11 input,
-.se12 input {
-    margin: 10px;
-    padding: 5px;
-    width: 100%;
-}
-
-h2.doy {
-    text-align: center;
-    font-size: 35px;
-    background-color: aquamarine;
-}
-
-h2.registro {
-    text-align: center;
-    font-size: 35px;
-    background-color: aquamarine;
-    margin-top: -390px;
-    margin-bottom: 40px;
-}
-
-.hi {
-    float: right;
-    border: 0;
-    background: #53f9ff;
-    color: rgb(15, 0, 226);
-    padding: 5px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.5s;
-    margin: 200px 305px 40px;
-    width: 50%;
-    font-size: 25px;
-}
-
-@media all and (max-width: 750px) {
-    .todo {
-        background: url(http://vipmascotas.com/wp-content/uploads/2019/02/105.jpg) no-repeat center;
-        background-size: cover;
-        height: auto;
-        margin: 0;
-    }
-    .datos {
-        margin: 0;
-        overflow: hidden;
-        height: auto;
-    }
-    .titulo h1 {
-        text-align: center;
-        color: black;
-        width: 95%;
-        margin: 0 14px;
-    }
-    .hola,
-    .hola1,
-    .hola2,
-    .hola3,
-    .hola4,
-    .hola5,
-    .hola6 {
-        display: block;
-        width: 98%;
-        box-sizing: border-box;
-        background: #111;
-        padding: 20px 40px;
-        color: #add;
-        transition: 0.5s;
-        outline: none;
-        border-radius: 20px;
-        margin: 16px 0;
-    }
-    .hola :focus,
-    .hola1 :focus,
-    .hola2 :focus,
-    .hola3 :focus,
-    .hola4 :focus {
-        box-shadow: 0 0 20px 8px #34495e;
-    }
-    .hola label,
-    .hola1 label,
-    .hola2 label,
-    .hola3 label,
-    .hola4 label {
-        margin: 10px;
-    }
-
-    .hola3 select,
-    .hola input,
-    .hola1 input,
-    .hola2 input,
-    .hola4 input {
-        margin: 10px;
-        padding: 5px;
-        width: 100%;
-    }
-    .general p {
-        font-size: 19px;
-        width: 100%;
-        text-align: center;
-        font-weight: bold;
-        margin: 10px auto 0;
-    }
-    .se,
-    .se3,
-    .se4,
-    .se8,
-    .se9,
-    .se10,
-    .se11,
-    .se12 {
-        display: block;
-        width: 98%;
-        box-sizing: border-box;
-        background: #111;
-        padding: 20px 40px;
-        color: #add;
-        transition: 0.5s;
-        outline: none;
-        border-radius: 20px;
-        margin: 16px 0;
-    }
-    .se :focus,
-    .se3 :focus,
-    .se4 :focus,
-    .se8 :focus,
-    .se9 :focus,
-    .se10 :focus,
-    .se11 :focus,
-    .se12 :focus {
-        box-shadow: 0 0 20px 8px #34495e;
-    }
-    .se5 textarea {
-        resize: none;
-        width: 100%;
-        height: 120px;
-        margin: 10px 10px;
-    }
-    .se label,
-    .se3 label,
-    .se4 label,
-    .se8 label,
-    .se9 label,
-    .se10 label,
-    .se11 label,
-    .se12 label {
-        margin: 10px;
-    }
-
-    .se3 select,
-    .se input,
-    .se4 input,
-    .se8 input,
-    .se9 input,
-    .se10 input,
-    .se11 input,
-    .se12 input {
-        margin: 10px;
-        padding: 5px;
-        width: 100%;
-    }
-    h2.doy {
-        text-align: center;
-        font-size: 35px;
-        background-color: aquamarine;
-    }
-    h2.registro {
-        text-align: center;
-        font-size: 25px;
-        background-color: aquamarine;
-        margin-top: -1px;
-        padding: 10px;
-        width: 94%;
-    }
-    .hi {
-        float: right;
-        border: 0;
-        background: #53f9ff;
-        color: rgb(15, 0, 226);
-        padding: 5px;
-        border-radius: 20px;
-        cursor: pointer;
-        transition: 0.5s;
-        margin: 10px 110px 40px;
-        width: 50%;
-        font-size: 25px;
-    }
-}
+     height: auto;
+     width: 100%;
+ }
+ 
+ body {
+     background: url(http://vipmascotas.com/wp-content/uploads/2019/02/105.jpg) no-repeat center;
+     background-size: cover;
+     padding: 0;
+     height: auto;
+     width: 100%;
+     margin: auto;
+ }
+ 
+ .titulo h1 {
+     text-align: center;
+     color: rgb(24, 71, 4);
+     width: 95%;
+     margin: 0 29.5px 0;
+     font-size: 50px;
+ }
+ 
+ .general p {
+     font-size: 27px;
+     width: 100%;
+     text-align: center;
+     font-weight: bold;
+     color: rgb(16, 14, 138);
+ }
+ 
+ .datos {
+     margin: auto auto 25px;
+     overflow: hidden;
+     width: 40%;
+     height: auto;
+     padding: 20px 40px;
+     background-color: aquamarine;
+     outline: none;
+     border-radius: 20px;
+ }
+ 
+ input.inputt,
+ select.inputt {
+     display: block;
+     width: 100%;
+     box-sizing: border-box;
+     padding: 13px 40px;
+     color: rgb(0, 0, 0);
+     transition: 0.5s;
+     outline: none;
+     border-radius: 20px;
+     font-weight: bold;
+     margin: 16px 0;
+     font-size: 16px;
+ }
+ 
+ .datos label.label2 :focus,
+ .datos input.inputt :focus {
+     box-shadow: 0 0 20px 8px #34495e;
+ }
+ 
+ label.label2 {
+     font-size: 25px;
+ }
+ 
+ h2.registro {
+     text-align: center;
+     font-size: 35px;
+     background-color: aquamarine;
+     width: 44%;
+     margin: 40px auto;
+     padding: 15px;
+     outline: none;
+     border-radius: 20px;
+ }
+ 
+ button.inputt {
+     float: right;
+     border: 0;
+     padding: 5px;
+     border-radius: 20px;
+     cursor: pointer;
+     transition: 0.5s;
+     margin: 50px 140px 1px;
+     width: 50%;
+     font-size: 25px;
+ }
+ 
+ .procesada {
+     width: 99.5%;
+     height: auto;
+     color: white;
+     margin-top: 150px;
+ }
+ 
+ .procesada h1 {
+     text-align: center;
+     font-size: 35px;
+     background-color: rgb(0, 0, 0);
+     width: 44%;
+     margin: 40px auto;
+     padding: 15px;
+     outline: none;
+     border-radius: 20px;
+ }
+ 
+ .procesada p {
+     text-align: center;
+     font-size: 25px;
+     background-color: rgb(0, 0, 0);
+     width: 44%;
+     margin: 40px auto;
+     padding: 15px;
+     outline: none;
+     border-radius: 20px;
+ }
+ 
+ @media all and (max-width: 750px) {
+     body {
+         background: url(http://vipmascotas.com/wp-content/uploads/2019/02/105.jpg) no-repeat center;
+         background-size: cover;
+         height: auto;
+         margin: 0;
+     }
+     .datos {
+         margin: auto auto 55px;
+         overflow: hidden;
+         height: auto;
+         width: 65%;
+     }
+     .titulo h1 {
+         text-align: center;
+         color: black;
+         width: 95%;
+         font-size: 44px;
+         margin-top: 145px;
+         margin-left: 15px;
+     }
+     .general p {
+         font-size: 19px;
+         width: 100%;
+         text-align: center;
+         font-weight: bold;
+         margin: 10px auto 0;
+     }
+     input.inputt,
+     select.inputt {
+         display: block;
+         width: 100%;
+         box-sizing: border-box;
+         background: #111;
+         padding: 13px 40px;
+         color: rgb(255, 255, 255);
+         transition: 0.5s;
+         outline: none;
+         border-radius: 20px;
+         font-weight: bold;
+         margin: 16px 0;
+     }
+     label.label2 {
+         font-size: 20px;
+         font-weight: bold;
+     }
+     .datos {
+         box-shadow: 0 0 20px 8px #34495e;
+     }
+     .datos label {
+         margin: 10px;
+     }
+     h2.registro {
+         text-align: center;
+         font-size: 25px;
+         background-color: aquamarine;
+         margin-top: 25px;
+         padding: 10px;
+         width: 79%;
+     }
+     button.inputt {
+         float: right;
+         border: 0;
+         background: #53f9ff;
+         color: rgb(15, 0, 226);
+         padding: 5px;
+         border-radius: 20px;
+         cursor: pointer;
+         transition: 0.5s;
+         margin: 25px 90px 4px;
+         width: 50%;
+         font-size: 25px;
+     }
+     .procesada {
+         width: 100%;
+         height: 700px;
+         color: white;
+         margin-top: 120px;
+     }
+     .procesada h1 {
+         text-align: center;
+         font-size: 30px;
+         background-color: rgb(0, 0, 0);
+         width: 70%;
+         margin: 40px auto;
+         padding: 15px;
+         outline: none;
+         border-radius: 20px;
+     }
+     .procesada p {
+         text-align: center;
+         font-size: 20px;
+         background-color: rgb(0, 0, 0);
+         width: 70%;
+         margin: 40px auto;
+         padding: 15px;
+         outline: none;
+         border-radius: 20px;
+     }
+ }

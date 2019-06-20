@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-06-2019 a las 17:25:08
+-- Tiempo de generación: 20-06-2019 a las 19:23:25
 -- Versión del servidor: 10.1.38-MariaDB
--- Versión de PHP: 7.2.17
+-- Versión de PHP: 7.3.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -76,21 +76,62 @@ CREATE TABLE `mascotas` (
   `nivel_act` varchar(15) NOT NULL,
   `espacio_req` varchar(15) NOT NULL,
   `tiempo_solo` int(11) NOT NULL,
-  `estado` varchar(10) NOT NULL
+  `estado` varchar(10) NOT NULL,
+  `tipo_masc` varchar(70) NOT NULL,
+  `imagen` varchar(300) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `mascotas`
 --
 
-INSERT INTO `mascotas` (`id_masc`, `nombre_masc`, `sexo_masc`, `tamaño_masc`, `peso_masc`, `edad_masc`, `nivel_act`, `espacio_req`, `tiempo_solo`, `estado`) VALUES
-(6, 'a', 'hembra', 'mediano', '1', 12, 'medio', 'pequeño', 2, ''),
-(7, 'maria', 'hembra', 'mediano', '1', 12, 'fuerte', 'mediano', 2, ''),
-(9, 'monica', 'hembra', 'mediano', '1', 12, 'fuerte', 'mediano', 2, ''),
-(10, 'maria', 'hembra', 'mediano', '1', 12, 'fuerte', 'mediano', 2, 'adoptado'),
-(12, 'mola', 'hembra', 'mediano', '1', 12, 'fuerte', 'mediano', 2, 'adoptado'),
-(13, 'milagros', 'hembra', 'mediano', '1', 12, 'fuerte', 'mediano', 2, 'en adopcio'),
-(14, 'mola', 'hembra', 'mediano', '1', 12, 'fuerte', 'mediano', 2, 'adoptado');
+INSERT INTO `mascotas` (`id_masc`, `nombre_masc`, `sexo_masc`, `tamaño_masc`, `peso_masc`, `edad_masc`, `nivel_act`, `espacio_req`, `tiempo_solo`, `estado`, `tipo_masc`, `imagen`) VALUES
+(6, 'a', 'hembra', 'mediano', '1', 12, 'medio', 'pequeño', 2, '', '', ''),
+(7, 'maria', 'hembra', 'mediano', '1', 12, 'fuerte', 'mediano', 2, '', '', ''),
+(9, 'monica', 'hembra', 'mediano', '1', 12, 'fuerte', 'mediano', 2, '', '', ''),
+(10, 'maria', 'hembra', 'mediano', '1', 12, 'fuerte', 'mediano', 2, 'adoptado', '', ''),
+(12, 'mola', 'hembra', 'mediano', '1', 12, 'fuerte', 'mediano', 2, 'adoptado', '', ''),
+(13, 'milagros', 'hembra', 'mediano', '1', 12, 'fuerte', 'mediano', 2, 'en adopcio', '', ''),
+(14, 'mola', 'hembra', 'mediano', '1', 12, 'fuerte', 'mediano', 2, 'adoptado', '', ''),
+(15, 'hola', 'hembra', 'grande', '30', 6, 'bajo', 'grande', 1, '', 'perro', ''),
+(16, 'hola', 'hembra', 'grande', '30', 6, 'bajo', 'grande', 1, '', 'perro', ''),
+(17, 'hola', 'hembra', 'mediano', '30', 3, '1', 'mediano', 1, '', 'perro', 'img/.perro.jpg'),
+(18, 'hola', 'macho', 'mediano', '2', 6, '1', 'mediano', 1, '', 'perro', 'img/.perro.jpg'),
+(19, 'hola', 'macho', 'mediano', '2', 6, '1', 'mediano', 1, '', 'perro', 'img/.perro.jpg'),
+(20, 'hola', 'macho', 'mediano', '2', 6, '1', 'mediano', 1, '', 'perro', 'img/.perro.jpg'),
+(21, 'hola', 'macho', 'mediano', '2', 6, '1', 'mediano', 1, '', 'perro', 'img/.perro.jpg'),
+(22, 'hola', 'macho', 'mediano', '2', 6, '1', 'mediano', 1, '', 'perro', 'img/.perro.jpg'),
+(23, 'hola', 'macho', 'mediano', '2', 6, '1', 'mediano', 1, '', 'perro', 'img/.perro.jpg'),
+(24, 'hola', 'macho', 'mediano', '2', 6, '1', 'mediano', 1, '', 'perro', 'img/.perro.jpg'),
+(25, 'hola', 'macho', 'mediano', '2', 6, '1', 'mediano', 1, '', 'perro', 'img/.perro.jpg'),
+(26, 'mini', 'macho', 'grande', '2', 6, '1', 'mediano', 1, '', 'perro', 'img/.perro.jpg'),
+(27, 'mini', 'macho', 'grande', '2', 6, '1', 'mediano', 1, '', 'perro', 'img/.perro.jpg'),
+(28, 'mini', 'macho', 'grande', '2', 6, '1', 'mediano', 1, '', 'perro', 'img/.perro.jpg'),
+(29, 'mini', 'macho', 'grande', '2', 6, '1', 'mediano', 1, '', 'perro', 'img/.perro.jpg'),
+(30, 'mini', 'macho', 'grande', '2', 6, '1', 'mediano', 1, '', 'perro', 'img/.perro.jpg'),
+(31, 'mini', 'macho', 'grande', '2', 6, '1', 'mediano', 1, '', 'perro', 'img/.perro.jpg'),
+(32, 'mini', 'macho', 'grande', '2', 6, '1', 'mediano', 1, '', 'perro', 'img/.perro.jpg'),
+(33, 'mini', 'macho', 'grande', '2', 6, '1', 'mediano', 1, '', 'perro', 'img/.perro.jpg'),
+(34, 'mini', 'macho', 'grande', '2', 6, '1', 'mediano', 1, '', 'perro', 'img/.perro.jpg'),
+(35, 'mini', 'macho', 'grande', '2', 6, '1', 'mediano', 1, '', 'perro', 'img/.perro.jpg'),
+(36, 'hi', 'macho', 'mediano', '2', 6, 'bajo', 'grande', 1, '', 'perro', 'img/.perro.jpg'),
+(37, 'hi', 'macho', 'mediano', '2', 6, 'bajo', 'grande', 1, '', 'perro', 'img/.perro.jpg'),
+(38, 'hi', 'macho', 'mediano', '2', 6, 'bajo', 'grande', 1, '', 'perro', 'img/.perro.jpg'),
+(39, 'hi', 'macho', 'mediano', '2', 6, 'bajo', 'grande', 1, '', 'perro', 'img/.perro.jpg'),
+(40, 'hi', 'macho', 'mediano', '2', 6, 'bajo', 'grande', 1, '', 'perro', 'img/.perro.jpg'),
+(41, 'hi', 'macho', 'mediano', '2', 6, 'bajo', 'grande', 1, '', 'perro', 'img/.perro.jpg'),
+(42, 'hi', 'macho', 'mediano', '2', 6, 'bajo', 'grande', 1, '', 'perro', 'img/.perro.jpg'),
+(43, 'hi', 'macho', 'mediano', '2', 6, 'bajo', 'grande', 1, '', 'perro', 'img/.perro.jpg'),
+(44, 'hi', 'macho', 'mediano', '2', 6, 'bajo', 'grande', 1, '', 'perro', 'img/.perro.jpg'),
+(45, 'hi', 'macho', 'mediano', '2', 6, 'bajo', 'grande', 1, '', 'perro', 'img/.perro.jpg'),
+(46, 'hi', 'macho', 'mediano', '2', 6, 'bajo', 'grande', 1, '', 'perro', 'img/.perro.jpg'),
+(47, 'hi', 'macho', 'mediano', '2', 6, 'bajo', 'grande', 1, '', 'perro', 'img/.perro.jpg'),
+(48, 'hi', 'macho', 'mediano', '2', 6, 'bajo', 'grande', 1, '', 'perro', 'img/.perro.jpg'),
+(49, 'hi', 'macho', 'mediano', '2', 6, 'bajo', 'grande', 1, '', 'perro', 'img/.perro.jpg'),
+(50, 'hi', 'macho', 'mediano', '2', 6, 'bajo', 'grande', 1, '', 'perro', 'img/.perro.jpg'),
+(51, 'hi', 'macho', 'mediano', '2', 6, 'bajo', 'grande', 1, '', 'perro', 'img/.perro.jpg'),
+(52, 'hi', 'macho', 'mediano', '2', 6, 'bajo', 'grande', 1, '', 'perro', 'img/.perro.jpg'),
+(53, 'hi', 'macho', 'mediano', '2', 6, 'bajo', 'grande', 1, '', 'perro', 'img/.perro.jpg');
 
 -- --------------------------------------------------------
 
@@ -171,7 +212,7 @@ ALTER TABLE `fichas`
 -- AUTO_INCREMENT de la tabla `mascotas`
 --
 ALTER TABLE `mascotas`
-  MODIFY `id_masc` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_masc` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 
 --
 -- AUTO_INCREMENT de la tabla `postulante`
