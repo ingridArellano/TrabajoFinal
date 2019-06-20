@@ -33,7 +33,7 @@ session_start();
     <div>
         <input type="submit" name="" value="Iniciar sesión"/>
         </div>
-    <p>No te haz registrado<a href="adoptYa.php"><span>Registrate</span></a></p>
+    <p style="color:white">¿No te haz registrado?  <a href="adoptYa.php"><span style="color:white">Registrate</span></a></p>
     </form>
    
 </body>
