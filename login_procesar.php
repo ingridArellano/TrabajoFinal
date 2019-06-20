@@ -12,15 +12,13 @@ $resultado=$pdo->query("SELECT * FROM postulante WHERE usuarioNick='$usuario' an
 $filas=$resultado->fetchAll();
 
 
-$result=$pdo->query("SELECT id FROM postulante WHERE usuarioNick='$usuario' and contraseñaNick= '$password'");
-$fila=$result->fetch();
 
 if(count($filas) ==1) {
     #Usuario correcto
     #Guardar el resultado de la validacion SESSION
     session_start(); #Lee el session ID. eN CASO NO EXISTA LO CREA
     $_SESSION["usuario"]=$usuario;
-    $_SESSION["id_usuario"]=$fila["id"];
+    $_SESSION["id_usuario"]=$fila["id_usuario"];
     #Redirigir al index.php
     header("Location: adoptar.php");
 }

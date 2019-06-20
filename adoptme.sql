@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-06-2019 a las 06:56:05
--- Versión del servidor: 10.1.36-MariaDB
--- Versión de PHP: 7.2.11
+-- Tiempo de generación: 20-06-2019 a las 07:15:38
+-- Versión del servidor: 10.1.38-MariaDB
+-- Versión de PHP: 7.2.17
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -83,7 +83,7 @@ INSERT INTO `mascotas` (`id_masc`, `nombre_masc`, `sexo_masc`, `tamaño_masc`, `
 --
 
 CREATE TABLE `postulante` (
-  `id` int(11) NOT NULL,
+  `id_usuario` int(11) NOT NULL,
   `usuarioNick` varchar(30) NOT NULL,
   `contraseñaNick` varchar(30) NOT NULL,
   `nombre` varchar(100) NOT NULL,
@@ -98,6 +98,13 @@ CREATE TABLE `postulante` (
   `ocupacion` varchar(100) NOT NULL,
   `centroET` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `postulante`
+--
+
+INSERT INTO `postulante` (`id_usuario`, `usuarioNick`, `contraseñaNick`, `nombre`, `apellido`, `direccion`, `distrito`, `celular`, `fechaNacimiento`, `dni`, `correo`, `estadoCivil`, `ocupacion`, `centroET`) VALUES
+(1, 'hola', '123', 's', 'q', 'f', '17', '989658210', '2001-12-12', '12345678', 'ss@hotmail.com', 'casado', 'estudiante', 'usil');
 
 --
 -- Índices para tablas volcadas
@@ -125,7 +132,7 @@ ALTER TABLE `mascotas`
 -- Indices de la tabla `postulante`
 --
 ALTER TABLE `postulante`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id_usuario`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -153,7 +160,7 @@ ALTER TABLE `mascotas`
 -- AUTO_INCREMENT de la tabla `postulante`
 --
 ALTER TABLE `postulante`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
