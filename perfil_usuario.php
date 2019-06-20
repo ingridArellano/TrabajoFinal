@@ -172,7 +172,6 @@
                     <label class="label2">Centro de trabajo/estudio:</label>
                     <input class ="inputt" type="text" name="centroET" value="<?php echo $fila["centroET"] ?>">
                     
-                    <button  type="submit" class="inputt">ACTUALIZAR</button>
                     
                 </form>
             </div>
