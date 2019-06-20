@@ -12,6 +12,8 @@ $resultado=$pdo->query("SELECT * FROM postulante WHERE usuarioNick='$usuario' an
 $filas=$resultado->fetchAll();
 
 
+$result=$pdo->query("SELECT id_usuario FROM postulante WHERE usuarioNick='$usuario' and contraseñaNick= '$password'");
+$fila=$result->fetch();
 
 if(count($filas) ==1) {
     #Usuario correcto

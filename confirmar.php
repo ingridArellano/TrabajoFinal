@@ -2,7 +2,7 @@
 session_start(); 
 $id_mascota=$_GET["id"];
 $pdo=new PDO ("mysql:host=localhost;dbname=AdoptMe;charset=utf8","root","");
-$id_usuario=$_SESSION["id_usuario"];
+echo $id_usuario=$_SESSION["id_usuario"];
 $sq = "INSERT INTO fichas values (NULL, '$id_usuario','$id_mascota')";
 $pdo->query($sq);
 

@@ -2,9 +2,10 @@
     session_start(); #Esta funcion debe ser llamada antes de un output
 ?>
 <?php
-    $id=$_SESSION["id_usuario"];
+    
     $pdo=new PDO ("mysql:host=localhost;dbname=adoptme;charset=utf8","root","");
-    $resultado=$pdo->query("SELECT * FROM postulante WHERE id='$id' ");
+    $id=$_SESSION["id_usuario"];
+    $resultado=$pdo->query("SELECT * FROM postulante WHERE id_usuario='$id' ");
     $fila=$resultado->fetch();
 ?>
 
@@ -41,9 +42,13 @@
     <?php include 'cabecera.php'?>
     
     <h1>Mi cuenta</h1>
-    <p style="color:black;font-size: 24px;text-align: center;font-weight: bold"><?php echo $id ?></p>
     <?php if(isset($_SESSION["usuario"])){ ?>
 
+<<<<<<< HEAD
+        <div>
+            <div style="border: 1px solid red;">
+                <p><?php echo $id ?></p>
+=======
         <div class="padre">
 
             <div style="border: 1px solid red;" class="a">
@@ -54,12 +59,13 @@
                 <?php echo $_SESSION["usuario"] ?> <br> <br> 
                 Bienvenido a su perfil.</p>
                 <footer><a href="logout.php">Cerrar sesión</a></footer>
+>>>>>>> 285e48a0eca013a1f11757f7b2ceec79e076506d
             </div>
 
             <div style="border: 1px solid red;" class="b">
 
-                <form action="" method="post">
-
+                <form action="login.php" method="post">
+               
                     <input type="hidden" name="id" value="<?php echo $id ?>">
                     <input type="hidden" name="usuarioNick" value="<?php echo $fila["usuarioNick"] ?>">
 
@@ -76,7 +82,7 @@
                     <input class ="inputt" type="text" name="direccion" value="<?php echo $fila["direccion"] ?>">
                     <label class="label2">Distrito:</label>
                     <select class ="inputt" name="distrito">
-                                        <option value="<?php echo $fila["distrito"] ?>">Distrito</option>
+                                        <option value="<?php echo $fila["distrito"] ?>"><?php echo $fila["distrito"] ?></option>
                                         <option value="Ancón">Ancón</option>
                                         <option value="Ate">Ate</option>
                                         <option value="Barranco">Barranco</option>
@@ -157,7 +163,8 @@
             <p style="color:black;font-size: 24px;text-align: center;font-weight: bold">Hola, inicia sesión 
             <a href="login.php">aqui</a> </p>
     <?php } ?>
-
+    
     <?php include 'pie.php'?>
+
 </body>
 </html>
