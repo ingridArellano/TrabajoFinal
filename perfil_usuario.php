@@ -7,6 +7,10 @@
     $id=$_SESSION["id_usuario"];
     $resultado=$pdo->query("SELECT * FROM postulante WHERE id_usuario='$id' ");
     $fila=$resultado->fetch();
+
+    $result=$pdo->query("SELECT id, COUNT(*) as numero FROM fichas WHERE id='$id'");
+    $row=$result->fetch();
+    
 ?>
 
 <!DOCTYPE html>
@@ -44,11 +48,7 @@
     <h1>Mi cuenta</h1>
     <?php if(isset($_SESSION["usuario"])){ ?>
 
-<<<<<<< HEAD
-        <div>
-            <div style="border: 1px solid red;">
-                <p><?php echo $id ?></p>
-=======
+
         <div class="padre">
 
             <div style="border: 1px solid red;" class="a">
@@ -58,8 +58,9 @@
                 <p style="color:black;font-size: 24px;text-align: center;font-weight: bold">Hola 
                 <?php echo $_SESSION["usuario"] ?> <br> <br> 
                 Bienvenido a su perfil.</p>
+                <p>Llevas hasta la fecha:<?php echo $row["numero"] ?> adoptadas</p>
                 <footer><a href="logout.php">Cerrar sesión</a></footer>
->>>>>>> 285e48a0eca013a1f11757f7b2ceec79e076506d
+
             </div>
 
             <div style="border: 1px solid red;" class="b">
