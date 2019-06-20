@@ -16,6 +16,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="estilos/hojaContacto.css">
+    <style>
+        .padre{
+            border: 2px solid purple;
+            height: 100% ;
+            width: 80% ;
+            margin: 0 auto 0;
+            display: flex;
+            flex-direction: row ;
+            flex-wrap: wrap ;
+            justify-content: space-around ;
+        }
+        .a {
+            flex-grow: 2 ;
+            flex-shrink: 1;
+        }   
+        .b { 
+            flex-grow: 1 ;
+            flex-shrink: 1;
+        }
+    </style>
 </head>
 <body>
     <?php include 'cabecera.php'?>
@@ -23,20 +43,25 @@
     <h1>Mi cuenta</h1>
     <p style="color:black;font-size: 24px;text-align: center;font-weight: bold"><?php echo $id ?></p>
     <?php if(isset($_SESSION["usuario"])){ ?>
-            <p style="color:black;font-size: 24px;text-align: center;font-weight: bold">Hola 
-            <?php echo $_SESSION["usuario"] ?>
-            , Bienvenido a su perfil. <a href="logout.php">Cerrar sesión</a> </p>
 
-        <div>
-            <div style="border: 1px solid red;">
-                <p>asd</p>
+        <div class="padre">
+
+            <div style="border: 1px solid red;" class="a">
+                <div style="margin:20 10">
+                    <img src="https://sites.google.com/site/webquestanimalesdom/_/rsrc/1472873888662/home/10780695-ilustracion-de-tres-animales-domesticos%20png.png">
+                </div>
+                <p style="color:black;font-size: 24px;text-align: center;font-weight: bold">Hola 
+                <?php echo $_SESSION["usuario"] ?> <br> <br> 
+                Bienvenido a su perfil.</p>
+                <footer><a href="logout.php">Cerrar sesión</a></footer>
             </div>
 
-            <div style="border: 1px solid red;">
+            <div style="border: 1px solid red;" class="b">
 
                 <form action="" method="post">
 
                     <input type="hidden" name="id" value="<?php echo $id ?>">
+                    <input type="hidden" name="usuarioNick" value="<?php echo $fila["usuarioNick"] ?>">
 
                     <h2 style="text-align: center;font-size:50px;background: salmon;">Perfil</h2>
 
