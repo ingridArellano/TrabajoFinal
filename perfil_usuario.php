@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="estilos/hojaPerfil_usuario.css">
     <style>
         .padre{
-            border: 2px solid purple;
             height: 100% ;
             width: 80% ;
             margin: 0 auto 0;
@@ -64,7 +63,7 @@
 
         <div class="padre">
 
-            <div style="border: 1px solid red;" class="a">
+            <div class="a">
                 <div style="margin:20 10">
                     <img src="https://sites.google.com/site/webquestanimalesdom/_/rsrc/1472873888662/home/10780695-ilustracion-de-tres-animales-domesticos%20png.png">
                 </div>
@@ -78,24 +77,25 @@
 
             </div>
 
-            <div style="border: 1px solid red;" class="b">
+            <div class="b">
 
                 <form action="login.php" method="post">
                
                     <input type="hidden" name="id" value="<?php echo $id ?>">
                     <input type="hidden" name="usuarioNick" value="<?php echo $fila["usuarioNick"] ?>">
 
-                    <h2 style="text-align: center;font-size:50px;background: salmon;">Perfil</h2>
-
-                    <label class="labell">1. Datos personales </label>
+                    <label class="por" style="text-align:center;font-size:30px;background: salmon;">Perfil</label>
                     <br>
+                    <label class="labell">1. Datos personales </label>
                     <br>
                     <label class="label2">Nombres:</label>             
                     <input class ="inputt" type="text" name="nombre" value="<?php echo $fila["nombre"] ?>">
                     <label class="label2">Apellidos:</label>
                     <input class ="inputt" type="text" name="apellido" value="<?php echo $fila["apellido"] ?>">
+                    
                     <label class="label2">Dirección:</label>
                     <input class ="inputt" type="text" name="direccion" value="<?php echo $fila["direccion"] ?>">
+                    
                     <label class="label2">Distrito:</label>
                     <select class ="inputt" name="distrito">
                                         <option value="<?php echo $fila["distrito"] ?>"><?php echo $fila["distrito"] ?></option>
@@ -145,14 +145,19 @@
                                         <option value="Villa María del Triunfo">Villa María del Triunfo</option>    
                                                                     
                     </select>
+                    
                     <label class="label2">Celular:</label>
                     <input class ="inputt" type="number" maxlength="9" name="celular" value="<?php echo $fila["celular"] ?>">
+                    
                     <label class="label2">Fecha de nacimiento:</label>
                     <input class ="inputt" type="date" name="fechaNacimiento" value="<?php echo $fila["fechaNacimiento"] ?>">
+                    
                     <label class="label2">DNI:</label>
                     <input class ="inputt" type="number" maxlength="8" name="dni" value="<?php echo $fila["dni"] ?>">
+                    
                     <label class="label2">Correo electrónico:</label>
                     <input class ="inputt" type="email" name="correo" value="<?php echo $fila["correo"] ?>">
+                    
                     <label class="label2">Estado civil:</label>
                     <select class ="inputt" name="estadoCivil">
                             <option value="<?php echo $fila["estadoCivil"] ?>"><?php echo $fila["estadoCivil"] ?></option>
@@ -161,12 +166,14 @@
                             <option value="viudo">Viudo</option>
                             <option value="divorciado">Divorciado</option>
                     </select>
+                    
                     <label class="label2">Ocupación:</label>
                     <input class ="inputt" type="text" name="ocupacion" value="<?php echo $fila["ocupacion"] ?>">
+                    
                     <label class="label2">Centro de trabajo/estudio:</label>
                     <input class ="inputt" type="text" name="centroET" value="<?php echo $fila["centroET"] ?>">
                     
-                    <button type="submit" class="inputt">ACTUALIZAR</button>
+                    <button  type="submit" class="inputt">ACTUALIZAR</button>
                     
                 </form>
             </div>

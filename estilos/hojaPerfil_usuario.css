@@ -3,6 +3,11 @@ img {
     margin: 0 auto;
 }
 
+.por{
+    display: block;
+    margin: 0 auto;
+}
+
 form {
     width: 500px;
     margin: auto;
@@ -27,7 +32,7 @@ form {
     margin: .5em 0 0 0;
     text-align: justify;
     color: black;
-    font-size: 23px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -40,11 +45,11 @@ form {
     background: rgba(2, 2, 2, 0.7);
 }
 
-.inputt, textarea {
+.inputt {
     width: 100%;
     margin: 5px auto ;
     margin-bottom: 20px;
-    padding: 7px;
+    padding: 5px;
     box-sizing: border-box;
     font-size: 17px;
     border: none;
