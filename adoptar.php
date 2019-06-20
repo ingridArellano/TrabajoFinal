@@ -106,7 +106,8 @@ $resMascota=$pdo->query($mascotas);
         <div class="hijo">
 
         <img class="imagen-cuadro" src="http://cdn.lavozdesanjusto.com.ar/Imagenes/1200Image1534794eb6f149ba9ed94d6fa86fd45b.jpg" alt="">
-        <p style="color:black"><?php echo $registroMascota["nombre_masc"] ?></p>
+        <p style="color:black">Nombre: <?php echo $registroMascota["nombre_masc"] ?></p>
+        <p style="color:black">Estado: <?php echo $registroMascota["estado"] ?></p>
         <a class="prueba" href="perfil.php?id=<?php echo $registroMascota["id_masc"]?>">Conoceme</a>
         </div> 
 

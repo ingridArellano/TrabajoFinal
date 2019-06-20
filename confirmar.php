@@ -2,12 +2,14 @@
 session_start(); 
 $id_mascota=$_GET["id"];
 $pdo=new PDO ("mysql:host=localhost;dbname=AdoptMe;charset=utf8","root","");
-echo $id_usuario=$_SESSION["id_usuario"];
+$id_usuario=$_SESSION["id_usuario"];
 $sq = "INSERT INTO fichas values (NULL, '$id_usuario','$id_mascota')";
 $pdo->query($sq);
 
+$estado="adoptado";
+
 $resultado=$pdo->query("SELECT * FROM mascotas WHERE id_masc='$id_mascota' ");
-$sql = "DELETE FROM mascotas WHERE id_masc='$id_mascota'" ;
+$sql = "UPDATE mascotas SET estado='$estado' WHERE id_masc='$id_mascota'" ;
 $pdo->query($sql);
 
 

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.css"> 
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> 
     <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 
 </head>
 <body>
@@ -24,7 +25,7 @@
 		<div class="acrdn-top">
 			<h4>Preguntas Frecuentes</h4>
 		</div>
-		<!-- Accordion -->
+		
 		<div class="ac-container agileits websystemayouts">
 			<div>
 				<input id="ac-1" name="accordion-1" type="checkbox" />
@@ -128,7 +129,6 @@
 </section>
 
     <br>
-
 
 <?php include 'pie.php'?>  
 </body>

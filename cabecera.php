@@ -38,10 +38,10 @@ session_start();
 
                 <?php if(isset($_SESSION["usuario"])){
                 ?>
-                <li><?php echo $_SESSION["usuario"]?></a></li>/<a href="logout.php"><span>Logout</span></a></li>;
+                <li>Hola:<?php echo $_SESSION["usuario"]?></a></li>/<a href="logout.php"><span>Salir</span></a></li>
                    <?php }
                 else {
-                ?><a href="login.php"><span>Login/Register</span></a></li>';
+                ?><a href="login.php"><span>Iniciar Sesión</span></a></li>';
                      <?php
                 }
                 ?>

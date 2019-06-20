@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-06-2019 a las 07:15:38
+-- Tiempo de generación: 20-06-2019 a las 17:25:08
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.2.17
 
@@ -49,6 +49,17 @@ CREATE TABLE `fichas` (
   `id_mascotas` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `fichas`
+--
+
+INSERT INTO `fichas` (`id_ficha`, `id`, `id_mascotas`) VALUES
+(5, 2, 11),
+(6, 2, 10),
+(7, 2, 10),
+(8, 2, 10),
+(9, 2, 14);
+
 -- --------------------------------------------------------
 
 --
@@ -64,17 +75,22 @@ CREATE TABLE `mascotas` (
   `edad_masc` int(11) NOT NULL,
   `nivel_act` varchar(15) NOT NULL,
   `espacio_req` varchar(15) NOT NULL,
-  `tiempo_solo` int(11) NOT NULL
+  `tiempo_solo` int(11) NOT NULL,
+  `estado` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `mascotas`
 --
 
-INSERT INTO `mascotas` (`id_masc`, `nombre_masc`, `sexo_masc`, `tamaño_masc`, `peso_masc`, `edad_masc`, `nivel_act`, `espacio_req`, `tiempo_solo`) VALUES
-(3, 'chu', 'median', 'mediano', '1', 1, 'medio', 'pequeño', 2),
-(4, 'chu', 'median', 'mediano', '1', 1, 'medio', 'pequeño', 2),
-(6, 'a', 'hembra', 'mediano', '1', 12, 'medio', 'pequeño', 2);
+INSERT INTO `mascotas` (`id_masc`, `nombre_masc`, `sexo_masc`, `tamaño_masc`, `peso_masc`, `edad_masc`, `nivel_act`, `espacio_req`, `tiempo_solo`, `estado`) VALUES
+(6, 'a', 'hembra', 'mediano', '1', 12, 'medio', 'pequeño', 2, ''),
+(7, 'maria', 'hembra', 'mediano', '1', 12, 'fuerte', 'mediano', 2, ''),
+(9, 'monica', 'hembra', 'mediano', '1', 12, 'fuerte', 'mediano', 2, ''),
+(10, 'maria', 'hembra', 'mediano', '1', 12, 'fuerte', 'mediano', 2, 'adoptado'),
+(12, 'mola', 'hembra', 'mediano', '1', 12, 'fuerte', 'mediano', 2, 'adoptado'),
+(13, 'milagros', 'hembra', 'mediano', '1', 12, 'fuerte', 'mediano', 2, 'en adopcio'),
+(14, 'mola', 'hembra', 'mediano', '1', 12, 'fuerte', 'mediano', 2, 'adoptado');
 
 -- --------------------------------------------------------
 
@@ -104,7 +120,8 @@ CREATE TABLE `postulante` (
 --
 
 INSERT INTO `postulante` (`id_usuario`, `usuarioNick`, `contraseñaNick`, `nombre`, `apellido`, `direccion`, `distrito`, `celular`, `fechaNacimiento`, `dni`, `correo`, `estadoCivil`, `ocupacion`, `centroET`) VALUES
-(1, 'hola', '123', 's', 'q', 'f', '17', '989658210', '2001-12-12', '12345678', 'ss@hotmail.com', 'casado', 'estudiante', 'usil');
+(1, 'hola', '123', 's', 'q', 'f', '17', '989658210', '2001-12-12', '12345678', 'ss@hotmail.com', 'casado', 'estudiante', 'usil'),
+(2, 'ajam', 'ajam', 'si', 'no', 'ese', 'Carabayllo', '123456789', '2001-03-12', '12345678', 'ss@hotmail.com', 'soltero', 'estudiante', 'usil');
 
 --
 -- Índices para tablas volcadas
@@ -148,19 +165,19 @@ ALTER TABLE `contacto`
 -- AUTO_INCREMENT de la tabla `fichas`
 --
 ALTER TABLE `fichas`
-  MODIFY `id_ficha` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_ficha` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `mascotas`
 --
 ALTER TABLE `mascotas`
-  MODIFY `id_masc` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_masc` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT de la tabla `postulante`
 --
 ALTER TABLE `postulante`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

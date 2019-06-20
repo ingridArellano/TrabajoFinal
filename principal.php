@@ -8,6 +8,8 @@
     <title>PAGINA PRINCIPAL</title>
     
     <link rel="stylesheet" href="estiloIndex.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+   
 </head>
 
 <body>
@@ -130,7 +132,7 @@
     <div class="ya">
         <a href="adoptar.php"><input class="botonya" type="button" value="¡ADOPTA UNA MASCOTA AQUÍ!"></a>
     </div>
-    
+    <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
     <?php include 'pie.php'; ?>
 
 </body>

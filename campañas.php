@@ -18,28 +18,28 @@
 
       <main class="mainn">
         <div class="singleBlog">
-          <img src="thum1.jpg" alt="">
+          <img src="image1.jpg" alt="">
           <div class="blogContent">
             <p><span>Campañas de esterilización de mascotas </span></p>
             <a href="entry.php" class="btn">Leer más</a>
           </div>
         </div>
         <div class="singleBlog">
-          <img src="thum2.jpg" alt="">
+          <img src="image2.jpg" alt="">
           <div class="blogContent">
             <p><span>Alianza con Pacho Cavero</span></p>
             <a href="http://panchocavero.com/category/uncategorized/" class="btn">Leer más</a>
           </div>
         </div>
         <div class="singleBlog">
-          <img src="thum3.jpg" alt="">
+          <img src="image3.jpg" alt="">
           <div class="blogContent">
             <p><span>Blogs recomendados</span></p>
             <a href="http://www.vetplace.pe/novedades/" class="btn">Leer más</a>
           </div>
         </div>
         <div class="singleBlog">
-          <img src="thum4.jpg" alt="">
+          <img src="image4.jpg" alt="">
           <div class="blogContent">
             <p><span>Más noticias</span></p>
             <a href="http://www.mascoteros.com/blog/" class="btn">Leer más</a>
