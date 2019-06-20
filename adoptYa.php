@@ -25,7 +25,7 @@
 
         <h2>Registro</h2>
 
-        <label class="labell">1. Datos para el inicio de sesión</label>
+        <label style="color:rgb(3, 111, 219);font-weight: bold" class="labell">1. Datos para el inicio de sesión</label>
         <br>
         <br>
         <label class="label2">Usuario:</label>
@@ -33,7 +33,7 @@
         <label class="label2">Contraseña</label>
         <input class="inputt" type="password" name="contraseña" >
 
-        <label class="labell">2. Datos personales </label>
+        <label style="color:rgb(3, 111, 219);font-weight: bold" class="labell">2. Datos personales </label>
         <br>
         <br>
         <label class="label2">Nombres:</label>             
