@@ -23,7 +23,7 @@ else{
     
     # Paso 1: Leer datos de $_POST
 
-    $usarioNick=$_POST['usuarioNick'];
+    $usuarioNick=$_POST['usuarioNick'];
     $contraseñaNick=$_POST['contraseñaNick'];
     $nombre=$_POST['nombre'];
     $apellido=$_POST['apellido'];
@@ -41,7 +41,7 @@ else{
     $pdo = new PDO("mysql:host=localhost;dbname=adoptme;charset=utf8","root",""); 
 
     # Paso 3: Construir comando:
-    $sql = "INSERT INTO postulante values (NULL, '$usarioNick', '$contraseñaNick','$nombre', '$apellido','$direccion','$distrito','$celular','$fechaNacimiento','$dni'
+    $sql = "INSERT INTO postulante values (NULL, '$usuarioNick', '$contraseñaNick','$nombre', '$apellido','$direccion','$distrito','$celular','$fechaNacimiento','$dni'
                                             ,'$correo','$estadoCivil', '$ocupacion', '$centroET')" ;
 
     # Paso 4: Ejecutar comando

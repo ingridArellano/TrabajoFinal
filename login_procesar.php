@@ -8,11 +8,11 @@ $password=$_POST["p"];
 
 $pdo=new PDO ("mysql:host=localhost;dbname=adoptme;charset=utf8","root","");
 
-$resultado=$pdo->query("SELECT * FROM postulante WHERE nombre='$usuario' and apellido= '$password'");
+$resultado=$pdo->query("SELECT * FROM postulante WHERE usuarioNick='$usuario' and contraseñaNick= '$password'");
 $filas=$resultado->fetchAll();
 
 
-$result=$pdo->query("SELECT id FROM postulante WHERE nombre='$usuario' and apellido= '$password'");
+$result=$pdo->query("SELECT id FROM postulante WHERE usuarioNick='$usuario' and contraseñaNick= '$password'");
 $fila=$result->fetch();
 
 if(count($filas) ==1) {

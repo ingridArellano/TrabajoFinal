@@ -117,7 +117,7 @@
         
         <button type="submit" class="inputt">REGISTRAR</button>
         
-        <p>¿Ya eres parte de nueva familia?</p><a href="login.php" class="btn">Inicia Sesión</a>
+        <p class="otrol">¿Ya eres parte de esta familia? <br> <a class="otrol" href="login.php" class="btn">Inicia Sesión</a> </p>
         
     </form>
    

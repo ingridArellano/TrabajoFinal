@@ -17,7 +17,7 @@ session_start();
 <body>
 <?php    
      if(isset($_GET["m"])){ ?>
-    <p style="color: red"> Datos incorrectos</p>
+    <p style="color:red;font-size: 24px;text-align: center;font-weight: bold"> Datos incorrectos</p>
 
     <?php } ?>
 
