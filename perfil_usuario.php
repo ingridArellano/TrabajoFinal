@@ -79,10 +79,9 @@
 
             <div class="b">
 
-                <form action="login.php" method="post">
+                <form action="procesar_update_perfilU.php" method="post">
                
                     <input type="hidden" name="id" value="<?php echo $id ?>">
-                    <input type="hidden" name="usuarioNick" value="<?php echo $fila["usuarioNick"] ?>">
 
                     <label class="por" style="text-align:center;font-size:30px;background: salmon;">Perfil</label>
                     <br>

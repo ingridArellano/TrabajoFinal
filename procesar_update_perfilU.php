@@ -1,7 +1,6 @@
 <?php
 #PASO1: LEER DATOS DEL $_POST
 $id = $_POST["id"];
-$contraseñaNick=$_POST['contraseñaNick']
 $nombre=$_POST['nombre'];
 $apellido=$_POST['apellido'];
 $direccion=$_POST['direccion'];
@@ -22,12 +21,12 @@ $pdo = new PDO("mysql:host=localhost;dbname=adoptme;charset=utf8","root","");
 
 #PASO3: CONSTRUIR COMANDO INSERTAR
 
-$sql = "UPDATE postulante SET contraseñaNick='$contraseñaNick',nombre='$nombre', apellido='$apellido',direccion='$direccion',distrito='$distrito',celular='$celular',
+$sql = "UPDATE postulante SET nombre='$nombre', apellido='$apellido',direccion='$direccion',distrito='$distrito',celular='$celular',
                               fechaNacimiento='$fechaNacimiento',dni='$dni',correo='$correo',estadoCivil='$estadoCivil', 
                               ocupacion='$ocupacion', centroET='$centroET' WHERE id='$id'" ;
 
 #PASO4: EJECUTAR COMANDO 
 $pdo->query($sql);
-    header("");
+    header("perfil_usuario.php");
 
 ?>
