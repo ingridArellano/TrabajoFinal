@@ -13,7 +13,7 @@ else{
         }
         
         #Validar que los campos estén escritos
-        if($_POST["nombre"] == "" ||$_POST["apellido"] == ""||$_POST["direccion"] == ""||$_POST["distrito"] == "" 
+        if($_POST["usuarioNick"] == "" ||$_POST["contraseñaNick"] == "" ||$_POST["nombre"] == "" ||$_POST["apellido"] == ""||$_POST["direccion"] == ""||$_POST["distrito"] == "" 
             ||$_POST["celular"] == ""||$_POST["fechaNacimiento"] == ""||$_POST["dni"] == ""
             ||$_POST["correo"] == ""||$_POST["estadoCivil"] == ""||$_POST["ocupacion"] == ""||$_POST["centroET"] == ""
             ||$_POST["tos"] == "") {
@@ -23,6 +23,8 @@ else{
     
     # Paso 1: Leer datos de $_POST
 
+    $usarioNick=$_POST['usuarioNick'];
+    $contraseñaNick=$_POST['contraseñaNick'];
     $nombre=$_POST['nombre'];
     $apellido=$_POST['apellido'];
     $direccion=$_POST['direccion'];
@@ -39,7 +41,7 @@ else{
     $pdo = new PDO("mysql:host=localhost;dbname=adoptme;charset=utf8","root",""); 
 
     # Paso 3: Construir comando:
-    $sql = "INSERT INTO postulante values (NULL,'$nombre', '$apellido','$direccion','$distrito','$celular','$fechaNacimiento','$dni'
+    $sql = "INSERT INTO postulante values (NULL, '$usarioNick', '$contraseñaNick','$nombre', '$apellido','$direccion','$distrito','$celular','$fechaNacimiento','$dni'
                                             ,'$correo','$estadoCivil', '$ocupacion', '$centroET')" ;
 
     # Paso 4: Ejecutar comando

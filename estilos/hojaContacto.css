@@ -18,13 +18,17 @@ form {
     margin: 0;
     font-size: 30px;
     margin-bottom: 20px;
+    color:rgb(3, 111, 219);
+    font-weight: bold;
+    background: wheat;
 }
 
 .label2 {
     margin: .5em 0 0 0;
     text-align: justify;
     color: black;
-    font-size: 20px;
+    font-size: 23px;
+    font-weight: bold;
 }
 
 .inputt, textarea {

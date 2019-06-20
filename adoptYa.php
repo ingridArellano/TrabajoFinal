@@ -23,17 +23,17 @@
 
     <form action="procesar_adoptYa.php" method="post">
 
-        <h2>Registro</h2>
+        <h2 style="text-align: center;font-size:50px;background: salmon;">REGISTRO</h2>
 
-        <label style="color:rgb(3, 111, 219);font-weight: bold" class="labell">1. Datos para el inicio de sesión</label>
+        <label class="labell">1. Datos para el inicio de sesión</label>
         <br>
         <br>
         <label class="label2">Usuario:</label>
-        <input class="inputt" type="text" name="usuario" >
+        <input class="inputt" type="text" name="usuarioNick" >
         <label class="label2">Contraseña</label>
-        <input class="inputt" type="password" name="contraseña" >
+        <input class="inputt" type="password" name="contraseñaNick" >
 
-        <label style="color:rgb(3, 111, 219);font-weight: bold" class="labell">2. Datos personales </label>
+        <label class="labell">2. Datos personales </label>
         <br>
         <br>
         <label class="label2">Nombres:</label>             
